@@ -18,6 +18,9 @@ import {
   Plus,
   Star,
 } from 'lucide-react'
+import StructuredData from './seo/StructuredData'
+import Picture from './seo/Picture'
+import { BookingProvider, useBooking } from './booking/Booking'
 
 /* =================================================================== */
 /*  VALOIS ORAL WELLNESS — a single, self-contained portfolio piece.   */
@@ -102,7 +105,7 @@ function MagneticButton({ children, className = '', strength = 0.4, ...rest }) {
       className={
         'group relative inline-flex items-center justify-center overflow-hidden rounded-full ' +
         'px-9 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-espresso ' +
-        'shadow-[0_18px_40px_-18px_rgba(27,168,181,0.8)] ' +
+        'shadow-[0_14px_30px_-18px_rgba(27,168,181,0.42)] ' +
         className
       }
       {...rest}
@@ -149,6 +152,7 @@ function Eyebrow({ children, light = false }) {
 /*  1 · CINEMATIC HERO REVEAL                                          */
 /* ================================================================== */
 function Hero() {
+  const { open: openBooking } = useBooking()
   const lines = [['THE', 'ARCHITECTURE'], ['OF', 'A', 'SMILE']]
 
   // word-level staggered clip-path / slide-up reveal
@@ -167,7 +171,7 @@ function Hero() {
 
   return (
     <section className="relative isolate flex min-h-screen flex-col justify-center overflow-hidden px-6 pb-20 pt-32 sm:px-10 lg:px-20">
-      <AquaWash />
+      <AquaWash intensity={0.6} />
 
       {/* background grid — fades + scales into view */}
       <motion.div
@@ -178,8 +182,8 @@ function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           backgroundImage:
-            'linear-gradient(to right, rgba(14,59,64,0.05) 1px, transparent 1px),' +
-            'linear-gradient(to bottom, rgba(14,59,64,0.05) 1px, transparent 1px)',
+            'linear-gradient(to right, rgba(14,59,64,0.028) 1px, transparent 1px),' +
+            'linear-gradient(to bottom, rgba(14,59,64,0.028) 1px, transparent 1px)',
           backgroundSize: '64px 64px',
           maskImage:
             'radial-gradient(ellipse 80% 70% at 50% 45%, black 30%, transparent 80%)',
@@ -196,7 +200,7 @@ function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(60% 50% at 50% 30%, rgba(27,168,181,0.16), transparent 70%)',
+            'radial-gradient(60% 50% at 50% 30%, rgba(27,168,181,0.09), transparent 70%)',
         }}
       />
 
@@ -251,7 +255,10 @@ function Hero() {
           transition={{ duration: 1.1, ease: EASE, delay: 1.75 }}
           className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row"
         >
-          <MagneticButton>
+          <MagneticButton
+            aria-label="Reserve a consultation with VALOIS Oral Wellness"
+            onClick={openBooking}
+          >
             Reserve a Consultation
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </MagneticButton>
@@ -298,13 +305,14 @@ function SmilePanel({ variant }) {
   const after = variant === 'after'
   return (
     <div className="relative h-full w-full overflow-hidden bg-espresso">
-      <img
+      <Picture
         src={after ? '/images/after.png' : '/images/before.png'}
         alt={
           after
             ? 'The same smile after professional whitening and alignment'
             : 'The smile before treatment — stained and uneven teeth'
         }
+        sizes="(min-width: 1024px) 60vw, 100vw"
         draggable={false}
         className="pointer-events-none h-full w-full select-none object-cover"
         style={{ objectPosition: '50% 50%' }}
@@ -361,12 +369,14 @@ function BeforeAfterSlider() {
   return (
     <section
       id="transformation"
-      className="relative px-6 py-28 sm:px-10 lg:px-20"
+      aria-labelledby="transformation-title"
+      className="relative px-6 py-36 sm:px-10 lg:px-20"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-14 max-w-2xl">
+        <div className="mb-20 max-w-2xl">
           <Eyebrow>The Transformation</Eyebrow>
           <h2
+            id="transformation-title"
             className="font-display font-bold leading-[0.95] tracking-[-0.02em] text-espresso"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.6rem)' }}
           >
@@ -380,7 +390,7 @@ function BeforeAfterSlider() {
 
         <div
           ref={containerRef}
-          className="relative aspect-[16/10] w-full select-none overflow-hidden rounded-[2rem] border border-espresso/10 shadow-[0_40px_120px_-50px_rgba(14,59,64,0.55)]"
+          className="relative aspect-[16/10] w-full select-none overflow-hidden rounded-3xl border border-espresso/10 shadow-[0_24px_70px_-55px_rgba(14,59,64,0.28)]"
           onMouseDown={(e) => start(e.clientX)}
           onTouchStart={(e) => start(e.touches[0].clientX)}
         >
@@ -402,14 +412,14 @@ function BeforeAfterSlider() {
 
           {/* divider + handle */}
           <motion.div
-            className="absolute inset-y-0 z-10 w-px bg-cream shadow-[0_0_18px_rgba(0,0,0,0.25)]"
+            className="absolute inset-y-0 z-10 w-px bg-cream shadow-[0_0_12px_rgba(0,0,0,0.12)]"
             style={{ left: handleLeft, x: '-0.5px' }}
           >
             <motion.div
-              className="absolute top-1/2 left-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border border-champagne/60 bg-cream/95 text-espresso shadow-[0_10px_30px_-8px_rgba(14,59,64,0.5)] backdrop-blur"
+              className="absolute top-1/2 left-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border border-champagne/60 bg-cream/95 text-espresso shadow-[0_8px_20px_-10px_rgba(14,59,64,0.3)] backdrop-blur"
               animate={
                 interacted
-                  ? { scale: 1, boxShadow: '0 10px 30px -8px rgba(14,59,64,0.5)' }
+                  ? { scale: 1, boxShadow: '0 8px 20px -10px rgba(14,59,64,0.3)' }
                   : {
                       scale: [1, 1.12, 1],
                       boxShadow: [
@@ -500,7 +510,7 @@ function ServiceCard({ service, index }) {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={reset}
         style={{ rotateX: srx, rotateY: sry, transformStyle: 'preserve-3d' }}
-        className="group relative flex h-full min-h-[24rem] flex-col justify-between overflow-hidden rounded-3xl border border-espresso/10 bg-gradient-to-b from-white to-cream p-8 transition-shadow duration-500 hover:shadow-[0_50px_120px_-50px_rgba(27,168,181,0.7)]"
+        className="group relative flex h-full min-h-[24rem] flex-col justify-between overflow-hidden rounded-3xl border border-espresso/10 bg-gradient-to-b from-white to-cream p-8 transition-shadow duration-500 hover:shadow-[0_30px_70px_-55px_rgba(27,168,181,0.3)]"
       >
         {/* gold wash on hover */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-champagne/0 via-champagne/0 to-champagne/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -557,12 +567,17 @@ function ServiceCard({ service, index }) {
 
 function Services() {
   return (
-    <section id="services" className="relative px-6 py-28 sm:px-10 lg:px-20">
+    <section
+      id="services"
+      aria-labelledby="services-title"
+      className="relative px-6 py-36 sm:px-10 lg:px-20"
+    >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+        <div className="mb-20 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <Eyebrow>The Practice</Eyebrow>
             <h2
+              id="services-title"
               className="font-display font-bold leading-[0.95] tracking-[-0.02em] text-espresso"
               style={{ fontSize: 'clamp(2rem, 5vw, 3.6rem)' }}
             >
@@ -575,7 +590,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {SERVICES.map((s, i) => (
             <ServiceCard key={s.title} service={s} index={i} />
           ))}
@@ -641,19 +656,24 @@ function Stats() {
     { value: 100, suffix: '%', label: 'Painless Protocol' },
   ]
   return (
-    <section className="relative overflow-hidden bg-espresso px-6 py-28 sm:px-10 lg:px-20">
+    <section
+      id="results"
+      aria-labelledby="results-title"
+      className="relative overflow-hidden bg-espresso px-6 py-36 sm:px-10 lg:px-20"
+    >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-40"
+        className="pointer-events-none absolute inset-0 opacity-25"
         style={{
           background:
             'radial-gradient(50% 60% at 20% 10%, rgba(27,168,181,0.18), transparent 70%)',
         }}
       />
       <div className="relative mx-auto max-w-6xl">
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-20 max-w-2xl">
           <Eyebrow light>By the Numbers</Eyebrow>
           <h2
+            id="results-title"
             className="font-display font-bold leading-[0.95] tracking-[-0.02em] text-cream"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.6rem)' }}
           >
@@ -716,7 +736,13 @@ function Marquee() {
 /* ------------------------------------------------------------------ */
 /*  Parallax image — drifts + scales gently as it crosses the viewport */
 /* ------------------------------------------------------------------ */
-function ParallaxImage({ src, alt, className = '', range = 50 }) {
+function ParallaxImage({
+  src,
+  alt,
+  className = '',
+  range = 50,
+  sizes = '(min-width: 768px) 50vw, 100vw',
+}) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -725,13 +751,14 @@ function ParallaxImage({ src, alt, className = '', range = 50 }) {
   const y = useTransform(scrollYProgress, [0, 1], [range, -range])
   return (
     <div ref={ref} className={'overflow-hidden ' + className}>
-      <motion.img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        style={{ y, scale: 1.18 }}
-        className="h-full w-full object-cover"
-      />
+      <motion.div style={{ y, scale: 1.18 }} className="h-full w-full">
+        <Picture
+          src={src}
+          alt={alt}
+          sizes={sizes}
+          className="h-full w-full object-cover"
+        />
+      </motion.div>
     </div>
   )
 }
@@ -741,8 +768,12 @@ function ParallaxImage({ src, alt, className = '', range = 50 }) {
 /* ================================================================== */
 function Philosophy() {
   return (
-    <section className="relative px-6 py-28 sm:px-10 lg:px-20">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-2">
+    <section
+      id="philosophy"
+      aria-labelledby="philosophy-title"
+      className="relative px-6 py-36 sm:px-10 lg:px-20"
+    >
+      <div className="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
         {/* text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -752,6 +783,7 @@ function Philosophy() {
         >
           <Eyebrow>The Philosophy</Eyebrow>
           <h2
+            id="philosophy-title"
             className="font-display font-bold leading-[0.98] tracking-[-0.02em] text-espresso"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.6rem)' }}
           >
@@ -800,17 +832,18 @@ function Philosophy() {
           <ParallaxImage
             src="/images/img3.png"
             alt="A patient with a radiant, healthy smile in the clinic"
-            className="aspect-[4/5] w-full rounded-[2rem] border border-espresso/10 shadow-[0_40px_100px_-50px_rgba(14,59,64,0.5)]"
+            className="aspect-[4/5] w-full rounded-3xl border border-espresso/10 shadow-[0_24px_60px_-55px_rgba(14,59,64,0.26)]"
           />
-          <div className="absolute -bottom-10 -left-6 w-44 overflow-hidden rounded-2xl border-4 border-cream shadow-[0_30px_60px_-30px_rgba(14,59,64,0.6)] sm:w-56">
+          <div className="absolute -bottom-10 -left-6 w-44 overflow-hidden rounded-2xl border-2 border-cream shadow-[0_16px_40px_-38px_rgba(14,59,64,0.32)] sm:w-56">
             <ParallaxImage
               src="/images/img1.png"
               alt="A pristine tooth model beside precision dental instruments"
               className="aspect-[4/3] w-full"
               range={25}
+              sizes="(min-width: 640px) 224px, 176px"
             />
           </div>
-          <div className="absolute -right-4 -top-4 rounded-full bg-champagne px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-espresso shadow-lg">
+          <div className="absolute -right-4 -top-4 rounded-full bg-champagne px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-espresso shadow-sm">
             Est. Wellbeing
           </div>
         </motion.div>
@@ -828,31 +861,39 @@ function Atelier() {
       src: '/images/img2.png',
       label: 'The Consultation',
       note: 'Reading your case together, in full transparency.',
+      alt: 'A VALOIS clinician examining a dental model during a patient consultation',
     },
     {
       src: '/images/img4.png',
       label: 'The Suite',
       note: 'Light-filled, sterile-grade, designed to soothe.',
+      alt: 'A light-filled, sterile-grade VALOIS treatment suite',
     },
     {
       src: '/images/img1.png',
       label: 'Digital Diagnostics',
       note: 'Volumetric CBCT planning down to the micron.',
+      alt: 'Precision dental instruments and a tooth model used for digital CBCT diagnostics',
     },
   ]
   return (
-    <section className="relative px-6 py-28 sm:px-10 lg:px-20">
+    <section
+      id="atelier"
+      aria-labelledby="atelier-title"
+      className="relative px-6 py-36 sm:px-10 lg:px-20"
+    >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-20 max-w-2xl">
           <Eyebrow>The Atelier</Eyebrow>
           <h2
+            id="atelier-title"
             className="font-display font-bold leading-[0.95] tracking-[-0.02em] text-espresso"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.6rem)' }}
           >
             Inside the practice.
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {shots.map((s, i) => (
             <motion.figure
               key={s.label}
@@ -860,13 +901,14 @@ function Atelier() {
               whileInView={{ opacity: 1, y: 0, clipPath: 'inset(0 0 0% 0)' }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 1, ease: EASE, delay: i * 0.12 }}
-              className="group relative overflow-hidden rounded-2xl border border-espresso/10 shadow-[0_30px_80px_-50px_rgba(14,59,64,0.5)]"
+              className="group relative overflow-hidden rounded-2xl border border-espresso/10 shadow-[0_20px_55px_-55px_rgba(14,59,64,0.28)]"
             >
               <ParallaxImage
                 src={s.src}
-                alt={s.label}
+                alt={s.alt}
                 className="aspect-[3/4] w-full transition-transform duration-700"
                 range={40}
+                sizes="(min-width: 768px) 33vw, 100vw"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/0 to-espresso/0" />
               <figcaption className="absolute inset-x-0 bottom-0 p-6">
@@ -892,6 +934,7 @@ function Atelier() {
 /*  Navigation + Footer (frame the experience)                         */
 /* ================================================================== */
 function Nav() {
+  const { open: openBooking } = useBooking()
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -901,7 +944,8 @@ function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10 lg:px-20">
         <a
-          href="#"
+          href="#main"
+          aria-label="VALOIS ORAL WELLNESS — home"
           className="flex items-center gap-2 font-display text-lg font-extrabold tracking-[-0.01em] text-espresso"
         >
           <span className="grid h-8 w-8 place-items-center rounded-full bg-espresso text-cream">
@@ -909,7 +953,10 @@ function Nav() {
           </span>
           VALOIS
         </a>
-        <nav className="hidden items-center gap-9 text-xs font-medium uppercase tracking-[0.2em] text-espresso/70 md:flex">
+        <nav
+          aria-label="Primary"
+          className="hidden items-center gap-9 text-xs font-medium uppercase tracking-[0.2em] text-espresso/70 md:flex"
+        >
           <a href="#transformation" className="transition-colors hover:text-champagne">
             Transformations
           </a>
@@ -920,24 +967,26 @@ function Nav() {
             Contact
           </a>
         </nav>
-        <a
-          href="#contact"
+        <button
+          type="button"
+          onClick={openBooking}
           className="rounded-full border border-espresso/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-espresso transition-colors hover:border-champagne hover:text-champagne"
         >
           Book
-        </a>
+        </button>
       </div>
     </motion.header>
   )
 }
 
 function Footer() {
+  const { open: openBooking } = useBooking()
   return (
     <footer
       id="contact"
       className="relative isolate overflow-hidden px-6 py-24 sm:px-10 lg:px-20"
     >
-      <AquaWash intensity={0.7} />
+      <AquaWash intensity={0.45} />
       <div className="mx-auto max-w-6xl text-center">
         <Sparkles className="mx-auto mb-8 h-7 w-7 text-champagne" strokeWidth={1.2} />
         <h2
@@ -951,7 +1000,10 @@ function Footer() {
           standard the world has not yet seen.
         </p>
         <div className="mt-10 flex justify-center">
-          <MagneticButton>
+          <MagneticButton
+            aria-label="Request a private consultation invitation"
+            onClick={openBooking}
+          >
             Request Your Invitation
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </MagneticButton>
@@ -974,16 +1026,28 @@ function Footer() {
 /* ================================================================== */
 export default function App() {
   return (
-    <main className="min-h-screen bg-cream font-sans text-espresso antialiased">
-      <Nav />
-      <Hero />
-      <Marquee />
-      <Philosophy />
-      <BeforeAfterSlider />
-      <Services />
-      <Atelier />
-      <Stats />
-      <Footer />
-    </main>
+    <BookingProvider>
+      <StructuredData />
+      <a
+        href="#main"
+        className="sr-only z-[100] rounded-full bg-espresso px-5 py-2 text-sm font-semibold text-cream focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+      >
+        Skip to content
+      </a>
+      <main
+        id="main"
+        className="min-h-screen bg-cream font-sans text-espresso antialiased"
+      >
+        <Nav />
+        <Hero />
+        <Marquee />
+        <Philosophy />
+        <BeforeAfterSlider />
+        <Services />
+        <Atelier />
+        <Stats />
+        <Footer />
+      </main>
+    </BookingProvider>
   )
 }
