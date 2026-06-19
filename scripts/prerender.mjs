@@ -55,9 +55,10 @@ async function waitForServer(timeoutMs = 20000) {
 async function main() {
   const executablePath = findChrome()
   if (!executablePath) {
-    throw new Error(
-      'No Chrome/Chromium found. Set PUPPETEER_EXECUTABLE_PATH to a Chrome binary and re-run.',
+    console.warn(
+      '⚠ No Chrome/Chromium found; skipping prerender. The Vite build in dist/ is still deployable.',
     )
+    return
   }
 
   // Serve the freshly built dist/.
