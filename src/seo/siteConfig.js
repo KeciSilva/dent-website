@@ -20,19 +20,19 @@ export const siteConfig = {
 
   brand: 'VALOIS ORAL WELLNESS',
   shortName: 'VALOIS',
-  tagline: 'The Architecture of a Smile',
+  tagline: 'Healthy Smiles, Made Simple',
 
   // ≤ 155 chars — used for <meta name="description">, OG and Twitter.
   description:
-    'Biomimetic dentistry as a fine art — extraordinary smiles through micro-precision craftsmanship and painless science. Geneva · Dubai · New York.',
+    'Modern dental care for checkups, emergencies, implants, clear aligners and smile design in a calm, technology-led clinic. Geneva · Dubai · New York.',
 
   locale: 'en_US',
-  themeColor: '#0E3B40', // espresso (deep teal ink)
-  backgroundColor: '#E6F5F7', // cream (aqua mist)
+  themeColor: '#14343B', // espresso (deep ink)
+  backgroundColor: '#F7FBFB', // cream (porcelain white)
 
   // TODO(launch): export a real 1200×630 social cover image to this path.
   ogImage: '/og/og-cover-1200x630.jpg',
-  ogImageAlt: 'VALOIS ORAL WELLNESS — The Architecture of a Smile',
+  ogImageAlt: 'VALOIS ORAL WELLNESS — Healthy Smiles, Made Simple',
 
   logo: '/favicons/icon-512.png',
   priceRange: '$$$$',
@@ -81,19 +81,34 @@ export const siteConfig = {
   // Reused verbatim from App.jsx SERVICES (the on-page service copy).
   services: [
     {
-      name: 'Porcelain Veneers',
+      name: 'General Dentistry',
       description:
-        'Ultra-thin, hand-layered ceramics that refract light like natural enamel.',
+        'Exams, cleanings, fillings and gum care focused on prevention and long-term comfort.',
     },
     {
-      name: '3D Digital Implantology',
+      name: 'Cosmetic Smile Design',
       description:
-        'Guided, sub-millimetre placement engineered from volumetric CBCT scans.',
+        'Whitening, bonding and porcelain veneers planned around your facial proportions.',
     },
     {
-      name: 'Full Mouth Reconstruction',
+      name: 'Dental Implants',
       description:
-        'A complete biomimetic rebuild balancing function, occlusion and beauty.',
+        'Guided implant placement and restoration for a natural-looking replacement tooth.',
+    },
+    {
+      name: 'Clear Aligners',
+      description:
+        'Discreet orthodontics with digital scans, progress checks and predictable staging.',
+    },
+    {
+      name: 'Root Canal Therapy',
+      description:
+        'Microscope-assisted treatment designed to save infected teeth with less stress.',
+    },
+    {
+      name: 'Emergency Dentistry',
+      description:
+        'Fast help for toothache, broken teeth, swelling, lost fillings and dental trauma.',
     },
   ],
 }

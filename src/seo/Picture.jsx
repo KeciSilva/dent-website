@@ -26,9 +26,12 @@ export default function Picture({
     className,
     loading,
     decoding,
-    fetchPriority,
     draggable,
     style,
+  }
+
+  if (fetchPriority) {
+    imgCommon.fetchpriority = fetchPriority
   }
 
   // No optimized variants yet → plain img on the original source.

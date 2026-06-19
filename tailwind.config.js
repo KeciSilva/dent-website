@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Aqua palette: cool misted white · teal accent · deep teal ink
-        cream: '#E6F5F7',
-        champagne: '#1BA8B5',
-        espresso: '#0E3B40',
+        // Clean clinic palette: porcelain white · clinical teal · deep ink
+        cream: '#F7FBFB',
+        champagne: '#0EA5A8',
+        espresso: '#14343B',
       },
       fontFamily: {
         display: ['"Manrope"', 'system-ui', 'sans-serif'],

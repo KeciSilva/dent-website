@@ -170,7 +170,7 @@ function BookingModal({ open, onClose }) {
                 >
                   Request received.
                 </h2>
-                <p className="mx-auto mt-3 max-w-sm text-sm font-light leading-relaxed text-espresso/65">
+                <p className="mx-auto mt-3 max-w-sm text-sm font-light leading-relaxed text-espresso/[0.65]">
                   Thank you. Our concierge will be in touch shortly to arrange
                   your private consultation.
                 </p>
@@ -308,7 +308,7 @@ function BookingModal({ open, onClose }) {
                     )}
                   </button>
 
-                  <p className="pt-1 text-center text-[11px] font-light text-espresso/45">
+                  <p className="pt-1 text-center text-[11px] font-light text-espresso/[0.45]">
                     By appointment only · We reply within one business day.
                   </p>
                 </form>
