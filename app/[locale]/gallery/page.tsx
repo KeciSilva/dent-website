@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { JsonLd } from '@/components/i18n/seo'
 import { CTA } from '@/components/i18n/ui'
 import { getMessages } from '@/lib/i18n'
 import { localizedMetadata } from '@/lib/metadata'
@@ -35,6 +36,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
           </div>
         </div>
       </section>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.gallery, url: `/${locale}/gallery` }] }} />
       <CTA locale={locale} messages={messages} />
     </>
   )

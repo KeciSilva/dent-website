@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return localizedMetadata({
     locale,
     path: `/services/${service.slug}`,
-    title: `${copy.name} | ${copy.primaryKeyword}`,
+    title: copy.name,
     description: copy.short,
   })
 }

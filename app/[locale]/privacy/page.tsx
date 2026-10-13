@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getMessages } from '@/lib/i18n'
+import { JsonLd } from '@/components/i18n/seo'
 import { localizedMetadata } from '@/lib/metadata'
 import type { Locale } from '@/lib/site-config'
 
@@ -26,6 +27,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
           ))}
         </div>
       </div>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.privacy, url: `/${locale}/privacy` }] }} />
     </section>
   )
 }

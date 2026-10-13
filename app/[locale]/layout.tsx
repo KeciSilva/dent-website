@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       locale: locale === 'sq' ? 'sq_AL' : 'en_US',
       alternateLocale: locale === 'sq' ? ['en_US'] : ['sq_AL'],
       type: 'website',
-      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: locale === 'sq' ? 'Ambient modern i klinikës dentare Auro Dent' : 'Modern Auro Dent dental clinic interior' }],
     },
     twitter: {
       card: 'summary_large_image',

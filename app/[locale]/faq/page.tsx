@@ -27,6 +27,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: Lo
         </div>
       </section>
       <JsonLd data={{ type: 'faq', faqs: messages.faq.items }} />
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.faq, url: `/${locale}/faq` }] }} />
       <CTA locale={locale} messages={messages} />
     </>
   )

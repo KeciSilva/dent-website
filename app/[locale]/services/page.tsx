@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { ServiceGrid } from '@/components/i18n/ui'
+import { JsonLd } from '@/components/i18n/seo'
 import { getMessages } from '@/lib/i18n'
 import { localizedMetadata } from '@/lib/metadata'
 import type { Locale } from '@/lib/site-config'
@@ -29,6 +30,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
           <ServiceGrid locale={locale} messages={messages} />
         </div>
       </div>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.services, url: `/${locale}/services` }] }} />
     </section>
   )
 }

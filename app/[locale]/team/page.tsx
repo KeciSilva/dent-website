@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { JsonLd } from '@/components/i18n/seo'
 import { CTA } from '@/components/i18n/ui'
 import { siteConfig, type Locale } from '@/lib/site-config'
 import { getMessages } from '@/lib/i18n'
@@ -38,6 +39,7 @@ export default async function TeamPage({ params }: { params: Promise<{ locale: L
           </div>
         </div>
       </section>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.team, url: `/${locale}/team` }] }} />
       <CTA locale={locale} messages={messages} />
     </>
   )

@@ -56,6 +56,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         </div>
       </article>
       <JsonLd data={{ type: 'article', locale, slug: post.slug, messages }} />
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.blog, url: `/${locale}/blog` }, { name: copy.title, url: `/${locale}/blog/${post.slug}` }] }} />
       <CTA locale={locale} messages={messages} />
     </>
   )

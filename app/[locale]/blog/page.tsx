@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { blogPosts } from '@/data/demo-content'
 import { CTA } from '@/components/i18n/ui'
+import { JsonLd } from '@/components/i18n/seo'
 import { getMessages } from '@/lib/i18n'
 import { localizedMetadata } from '@/lib/metadata'
 import type { Locale } from '@/lib/site-config'
@@ -39,6 +40,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: L
           </div>
         </div>
       </section>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.blog, url: `/${locale}/blog` }] }} />
       <CTA locale={locale} messages={messages} />
     </>
   )

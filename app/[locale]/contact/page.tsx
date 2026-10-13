@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { services } from '@/data/demo-content'
+import { JsonLd } from '@/components/i18n/seo'
 import { getMessages } from '@/lib/i18n'
 import { localizedMetadata } from '@/lib/metadata'
 import { siteConfig, type Locale } from '@/lib/site-config'
@@ -70,6 +71,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </div>
         </form>
       </div>
+      <JsonLd data={{ type: 'breadcrumb', items: [{ name: messages.common.home, url: `/${locale}` }, { name: messages.nav.contact, url: `/${locale}/contact` }] }} />
     </section>
   )
 }
