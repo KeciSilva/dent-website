@@ -1,0 +1,323 @@
+{
+  "locale": "en",
+  "localeName": "English",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "book": "Book appointment",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content",
+    "language": "Language"
+  },
+  "common": {
+    "siteName": "Auro Dent",
+    "city": "Tirana",
+    "country": "Albania",
+    "demoBadge": "Demo content for course assignment",
+    "learnMore": "Learn more",
+    "readArticle": "Read article",
+    "relatedServices": "Related services",
+    "bookCta": "Book appointment",
+    "contactCta": "Contact the clinic",
+    "duration": "Duration",
+    "priceFrom": "Demo price",
+    "hours": "Opening hours",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "follow": "Follow",
+    "allServices": "All services",
+    "home": "Home"
+  },
+  "metadata": {
+    "home": {
+      "title": "Dental Clinic in Tirana",
+      "description": "Auro Dent is a modern demo dental clinic website for Tirana with bilingual content, service pages and local SEO foundations."
+    },
+    "about": {
+      "title": "About Auro Dent",
+      "description": "Learn about Auro Dent, a minimalist demo dental clinic in Tirana focused on gentle care, modern planning and clear communication."
+    },
+    "services": {
+      "title": "Dental Services in Tirana",
+      "description": "Explore demo dental services at Auro Dent, including check-ups, whitening, implants, orthodontics, pediatric dentistry and emergency care."
+    },
+    "team": {
+      "title": "Dental Team in Tirana",
+      "description": "Meet the demo dental team at Auro Dent in Tirana."
+    },
+    "gallery": {
+      "title": "Gallery and Before-After",
+      "description": "View a clean demo gallery structure for Auro Dent treatment examples and clinic photography."
+    },
+    "blog": {
+      "title": "Dental Blog",
+      "description": "Read short demo dental education articles from Auro Dent."
+    },
+    "faq": {
+      "title": "Dental FAQ",
+      "description": "Answers to common demo patient questions about appointments, whitening, implants, emergency care and children’s dentistry."
+    },
+    "contact": {
+      "title": "Contact and Book Appointment",
+      "description": "Contact Auro Dent in Tirana, view demo opening hours and request a dental appointment."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Demo privacy policy for the Auro Dent course assignment website."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The requested Auro Dent page could not be found."
+    }
+  },
+  "home": {
+    "heroEyebrow": "Dental clinic in Tirana",
+    "heroTitle": "Modern dental care, calm from the first visit.",
+    "heroText": "Auro Dent is a bilingual course-assignment dental clinic website with realistic demo content for local patients in Tirana and international visitors considering care in Albania.",
+    "primaryCta": "Book an appointment",
+    "secondaryCta": "Explore services",
+    "heroAlt": "Bright modern dental clinic treatment room",
+    "trust": [
+      { "title": "Modern equipment", "text": "Digital planning and clear explanations for each treatment path." },
+      { "title": "Gentle care", "text": "A calm approach for adults, children and nervous patients." },
+      { "title": "Flexible hours", "text": "Extended weekday hours and Saturday appointments." }
+    ],
+    "servicesTitle": "Dental treatments for everyday health and confident smiles.",
+    "servicesText": "Each service page explains who the treatment is for, what to expect and how patients can prepare.",
+    "aboutTitle": "Minimal, friendly and clinically focused.",
+    "aboutText": "The clinic story is built around prevention, careful diagnosis and treatment plans that patients can understand before they decide.",
+    "whyTitle": "Why choose Auro Dent",
+    "why": [
+      "Crawlable bilingual content for Albanian and English-speaking patients.",
+      "Transparent demo pricing and realistic appointment pathways.",
+      "Healthcare copy written without guarantees or exaggerated claims.",
+      "Local SEO foundations for Tirana and Albania search intent."
+    ],
+    "teamTitle": "Meet the care team",
+    "testimonialsTitle": "Patient feedback",
+    "faqTitle": "Questions before booking",
+    "finalTitle": "Ready to plan your visit?",
+    "finalText": "Send an appointment request or contact the clinic by phone or email."
+  },
+  "about": {
+    "eyebrow": "About the clinic",
+    "title": "A dental studio designed for trust, clarity and comfort.",
+    "intro": "Auro Dent is a realistic demo dental clinic website for Tirana. The content shows how a professional clinic can explain treatment choices, guide patients and support local SEO without unsupported claims.",
+    "storyTitle": "Clinic story",
+    "story": "The clinic is presented as a calm, modern practice where prevention, diagnostics and communication come before treatment decisions.",
+    "valuesTitle": "Values",
+    "values": [
+      { "title": "Clear information", "text": "Patients should understand their options, timing and aftercare." },
+      { "title": "Conservative planning", "text": "Treatment is described carefully, with oral health as the foundation." },
+      { "title": "Friendly visits", "text": "The tone is warm, organised and reassuring." }
+    ],
+    "technologyTitle": "Technology",
+    "technology": "Digital scans, clinical photography and careful treatment planning are described as part of the patient journey.",
+    "teamTitle": "Team approach",
+    "team": "The demo team covers general care, implants, orthodontics and pediatric dentistry."
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "Dental services in Tirana",
+    "intro": "Choose a treatment to learn about the process, candidacy, common questions and related services."
+  },
+  "serviceDetail": {
+    "forTitle": "Who it is for",
+    "processTitle": "Process"
+  },
+  "services": {
+    "generalDentistry": {
+      "name": "General dentistry & check-ups",
+      "short": "Routine exams, hygiene guidance, fillings and prevention for long-term oral health.",
+      "primaryKeyword": "dentist Tirana",
+      "intro": "General dentistry is the foundation of a healthy smile. At Auro Dent, check-ups focus on prevention, early diagnosis and clear treatment priorities.",
+      "for": "This service is for adults and teens who need routine exams, hygiene advice, tooth-coloured fillings or a first consultation.",
+      "process": ["Review dental history and current concerns.", "Complete clinical exam and X-rays when needed.", "Explain findings with priorities and options.", "Plan prevention, hygiene or restorative care."],
+      "faqs": [
+        { "q": "How often should I book a check-up?", "a": "Many patients attend every six months, but the right interval depends on gum health, decay risk and previous treatment." },
+        { "q": "Do I need X-rays every visit?", "a": "No. X-rays are recommended only when they help diagnosis or monitoring." },
+        { "q": "Can I book only for advice?", "a": "Yes. A consultation is useful before choosing treatment." }
+      ]
+    },
+    "teethWhitening": {
+      "name": "Teeth whitening",
+      "short": "Professional whitening options planned after checking enamel, gums and sensitivity risk.",
+      "primaryKeyword": "teeth whitening Tirana",
+      "intro": "Teeth whitening can brighten natural enamel when it is planned safely. Existing crowns, fillings and veneers do not whiten like natural teeth.",
+      "for": "Whitening may suit adults with healthy teeth and gums who want a brighter shade before an event or cosmetic treatment.",
+      "process": ["Check gums, enamel and existing restorations.", "Discuss shade expectations and sensitivity risk.", "Choose the whitening approach.", "Give aftercare and maintenance advice."],
+      "faqs": [
+        { "q": "Can whitening damage enamel?", "a": "Professional whitening is planned after a dental check and should be used as directed." },
+        { "q": "Will crowns whiten?", "a": "No. Ceramic and composite restorations do not change shade with whitening." },
+        { "q": "Can whitening cause sensitivity?", "a": "Temporary sensitivity can happen, so the dentist should assess risk first." }
+      ]
+    },
+    "dentalImplants": {
+      "name": "Dental implants",
+      "short": "Implant treatment planning for missing teeth, including consultation, diagnostics and restoration.",
+      "primaryKeyword": "dental implants Tirana",
+      "intro": "Dental implants can replace missing teeth when oral health, bone support and general health are suitable.",
+      "for": "This treatment may be considered for patients missing one or more teeth who want a fixed replacement option.",
+      "process": ["Consultation and medical history review.", "Digital imaging and implant planning.", "Surgical placement when suitable.", "Healing period and final crown or bridge.", "Maintenance instructions and follow-up."],
+      "faqs": [
+        { "q": "Is everyone suitable for implants?", "a": "No. Suitability depends on bone, gums, health history and clinical examination." },
+        { "q": "How long does treatment take?", "a": "Timing varies because healing and restoration stages differ by case." },
+        { "q": "Do implants need maintenance?", "a": "Yes. Daily cleaning and professional follow-up are important." }
+      ]
+    },
+    "orthodontics": {
+      "name": "Orthodontics, braces & aligners",
+      "short": "Braces and clear aligner planning for tooth alignment, bite comfort and smile balance.",
+      "primaryKeyword": "Invisalign Tirana",
+      "intro": "Orthodontic treatment can improve tooth position and bite function using braces or clear aligners when clinically suitable.",
+      "for": "It may suit teens or adults with crowding, spacing, relapse or bite concerns.",
+      "process": ["Orthodontic consultation and records.", "Digital scan and treatment discussion.", "Appliance or aligner delivery.", "Progress checks and adjustments.", "Retention planning after treatment."],
+      "faqs": [
+        { "q": "Are aligners right for every case?", "a": "No. Some movements require braces or specialist orthodontic care." },
+        { "q": "How long does treatment take?", "a": "Treatment length depends on complexity and patient cooperation." },
+        { "q": "Do I need retainers?", "a": "Yes. Retainers help maintain tooth position after treatment." }
+      ]
+    },
+    "pediatricDentistry": {
+      "name": "Pediatric dentistry",
+      "short": "Friendly dental visits for children, prevention, sealants and parent guidance.",
+      "primaryKeyword": "children dentist Tirana",
+      "intro": "Children’s dentistry focuses on prevention, confidence and early habits that support lifelong oral health.",
+      "for": "This service is for children and parents who want check-ups, prevention advice or help with early dental concerns.",
+      "process": ["Gentle introduction and parent discussion.", "Child-friendly exam.", "Prevention advice and fluoride guidance.", "Treatment planning only when needed."],
+      "faqs": [
+        { "q": "When should children first visit?", "a": "Early visits help children become comfortable and allow parents to receive prevention advice." },
+        { "q": "Are baby teeth important?", "a": "Yes. They support chewing, speech and spacing for adult teeth." },
+        { "q": "How can parents prevent cavities?", "a": "Daily brushing, fluoride toothpaste and limiting frequent sugar exposure help reduce risk." }
+      ]
+    },
+    "emergencyCare": {
+      "name": "Emergency dental care",
+      "short": "Urgent dental assessment for pain, swelling, broken teeth and lost restorations.",
+      "primaryKeyword": "emergency dentist Tirana",
+      "intro": "Dental emergencies need calm triage and clear next steps. Severe pain, swelling or trauma should be assessed quickly.",
+      "for": "This service is for patients with toothache, swelling, broken teeth, dental trauma or lost fillings and crowns.",
+      "process": ["Urgent symptoms are reviewed.", "The dentist examines the area and may request imaging.", "Immediate relief or temporary care is provided when appropriate.", "A follow-up plan is explained."],
+      "faqs": [
+        { "q": "What counts as an emergency?", "a": "Severe pain, swelling, trauma, uncontrolled bleeding or a broken front tooth should be assessed quickly." },
+        { "q": "Can every problem be fixed the same day?", "a": "Not always. The first visit may focus on diagnosis and stabilising the problem." },
+        { "q": "Should I wait if swelling improves?", "a": "Swelling can signal infection, so professional advice is recommended." }
+      ]
+    },
+    "cosmeticVeneers": {
+      "name": "Cosmetic dentistry (veneers)",
+      "short": "Smile design, veneers and aesthetic planning with cautious, natural-looking goals.",
+      "primaryKeyword": "dental veneers Tirana",
+      "intro": "Cosmetic dentistry can improve tooth shape, shade and smile harmony. Veneers are planned only after checking oral health and bite.",
+      "for": "Veneers may suit patients with healthy teeth who want to improve visible shape, shade or spacing concerns.",
+      "process": ["Smile consultation and goal setting.", "Exam of enamel, gums and bite.", "Preview or mock-up when suitable.", "Veneer preparation and bonding.", "Care instructions and maintenance visits."],
+      "faqs": [
+        { "q": "Are veneers permanent?", "a": "Many veneer treatments involve enamel preparation, so they should be considered long-term dental work." },
+        { "q": "Should I whiten before veneers?", "a": "Often yes, especially if only some teeth receive veneers." },
+        { "q": "Can veneers fix every smile concern?", "a": "No. Orthodontics, whitening or crowns may be more appropriate depending on the case." }
+      ]
+    }
+  },
+  "team": {
+    "eyebrow": "Team",
+    "title": "A calm, coordinated dental team",
+    "intro": "The following profiles are fictional demo content created for the course assignment.",
+    "bios": {
+      "elira-kodra": "Focuses on preventive care, smile planning and clear patient communication.",
+      "arbri-hoxha": "Plans implant and surgical cases with careful diagnostics and staged follow-up.",
+      "mira-lika": "Works with braces and aligner planning for teens and adults.",
+      "dea-prifti": "Creates relaxed appointments for children and practical guidance for parents."
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Clinic gallery and treatment examples",
+    "intro": "A clean placeholder gallery for course presentation. In a production clinic site, patient images should only be published with consent and accurate context.",
+    "items": [
+      { "title": "Reception", "alt": "Minimal dental clinic reception area" },
+      { "title": "Treatment room", "alt": "Clean dental treatment room with modern equipment" },
+      { "title": "Smile example", "alt": "Dental smile example for before and after gallery" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Dental education articles",
+    "intro": "Short demo articles support patient education and internal linking.",
+    "posts": {
+      "visitDentist": {
+        "title": "How often should you visit the dentist?",
+        "description": "A practical guide to dental check-up intervals and prevention.",
+        "body": ["Most patients benefit from regular dental check-ups, but the ideal schedule depends on gum health, decay risk and previous treatment.", "A check-up is not only about finding cavities. It also helps review brushing habits, gum inflammation, tooth wear and early symptoms.", "If you have pain, bleeding gums or sensitivity, book earlier instead of waiting for the next routine visit."]
+      },
+      "whiteningExpect": {
+        "title": "Teeth whitening: what to expect",
+        "description": "What patients should know before professional whitening.",
+        "body": ["Professional whitening starts with checking teeth and gums. This helps identify sensitivity risks and restorations that will not change colour.", "Results vary between patients. Natural enamel, habits and previous dental work all affect the final shade.", "After whitening, good hygiene and regular cleanings help maintain the result."]
+      },
+      "childrensTeeth": {
+        "title": "Caring for children’s teeth",
+        "description": "Simple habits that support children’s oral health.",
+        "body": ["Children’s dental care begins with daily brushing, fluoride toothpaste and early positive visits.", "Parents can reduce cavity risk by limiting frequent sugary snacks and helping children brush until they have the coordination to do it well.", "A friendly first visit helps children see dental care as normal and safe."]
+      },
+      "implantAftercare": {
+        "title": "How to care for dental implants",
+        "description": "Daily and professional care after implant treatment.",
+        "body": ["Dental implants need daily cleaning around the gumline and regular professional checks.", "Bleeding, swelling or discomfort around an implant should be assessed promptly.", "Maintenance visits help monitor bite forces, gum health and the condition of the restoration."]
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "intro": "Common patient questions before booking a dental appointment.",
+    "items": [
+      { "q": "How do I book an appointment?", "a": "Use the booking form, call the clinic or send an email with your preferred time and treatment interest." },
+      { "q": "Do you treat dental emergencies?", "a": "Emergency appointments are coordinated based on availability and symptom urgency." },
+      { "q": "Can international patients contact the clinic before travelling?", "a": "Yes. Remote enquiries can help prepare the first consultation, although final diagnosis requires an in-person exam." },
+      { "q": "Are prices guaranteed online?", "a": "No. Demo prices are indicative only; real treatment costs depend on diagnosis and treatment planning." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact and book an appointment",
+    "intro": "Send a request for a consultation or contact Auro Dent directly.",
+    "form": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "service": "Treatment of interest",
+      "message": "Message",
+      "submit": "Request appointment",
+      "note": "Form UI only for the course assignment; no real backend is connected."
+    },
+    "mapTitle": "Map showing Auro Dent demo location in Tirana"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This demo privacy policy explains how a clinic website may describe contact form and analytics data handling.",
+    "sections": [
+      { "title": "Contact form data", "text": "Information submitted through the form would be used to respond to appointment requests." },
+      { "title": "Medical information", "text": "Patients should avoid sending sensitive medical records through unsecured forms unless the clinic provides a secure process." },
+      { "title": "Cookies and analytics", "text": "A production website should disclose analytics, cookies and third-party services." }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you requested does not exist.",
+    "cta": "Go to homepage"
+  },
+  "loading": "Loading page",
+  "error": {
+    "title": "Something went wrong",
+    "text": "Please refresh the page or return to the homepage."
+  }
+}

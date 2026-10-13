@@ -1,31 +1,37 @@
 {
-  "name": "valois-oral-wellness",
+  "name": "aura-dental-studio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "prebuild": "node scripts/generate-icons.mjs && node scripts/optimize-images.mjs",
-    "build": "vite build",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/prerender.mjs",
-    "preview": "vite preview",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint app components lib --max-warnings=0",
+    "typecheck": "next typegen && tsc --noEmit",
     "seo:icons": "node scripts/generate-icons.mjs",
     "seo:images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.417.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.0",
     "png-to-ico": "^3.0.1",
     "postcss": "^8.4.40",
     "puppeteer-core": "^25.1.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.7",
+    "typescript": "^6.0.3",
     "vite": "^5.3.5"
   }
 }
