@@ -30,16 +30,24 @@
     "duration": "Duration",
     "priceFrom": "From",
     "hours": "Opening hours",
+    "hoursWeekdays": "Monday–Friday",
+    "hoursSaturday": "Saturday",
+    "hoursClosed": "Sunday — closed",
+    "durations": { "short": "30–45 min", "whitening": "60–90 min", "caseBased": "Case based", "sameDay": "Same day when available", "visits": "2–3 visits" },
+    "from": "From",
+    "demoFooter": "Demo website for academic purposes. The business is fictional.",
+    "demoTestimonials": "Demo testimonials for academic purposes",
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
     "follow": "Follow",
     "allServices": "All services",
     "home": "Home"
+    ,"breadcrumb": "Breadcrumb"
   },
   "metadata": {
     "home": {
-      "title": "Dental Clinic in Tirana",
+      "title": "Dental Clinic in Tirana | Auro Dent",
       "description": "Auro Dent provides modern, personalised dental care in Tirana, with clear treatment plans for local and international patients."
     },
     "about": {
@@ -81,7 +89,7 @@
   },
   "home": {
     "heroEyebrow": "Dental clinic in Tirana",
-    "heroTitle": "Modern dental care, calm from the first visit.",
+    "heroTitle": "Dental clinic in Tirana for modern, gentle care",
     "heroText": "Auro Dent brings modern, thoughtful dentistry to Tirana, with clear communication and personalised care for local and international patients.",
     "primaryCta": "Book an appointment",
     "secondaryCta": "Explore services",
@@ -93,17 +101,26 @@
     ],
     "servicesTitle": "Dental treatments for everyday health and confident smiles.",
     "servicesText": "Each service page explains who the treatment is for, what to expect and how patients can prepare.",
-    "aboutTitle": "Minimal, friendly and clinically focused.",
+    "aboutTitle": "About Auro Dent",
     "aboutText": "The clinic story is built around prevention, careful diagnosis and treatment plans that patients can understand before they decide.",
     "whyTitle": "Why choose Auro Dent",
     "why": [
       "Care available in Albanian and English for local and international patients.",
       "Clear treatment information and straightforward appointment planning.",
       "Thoughtful explanations without guarantees or exaggerated claims.",
-      "Local SEO foundations for Tirana and Albania search intent."
+      "A clinic in central Tirana, easy to reach."
     ],
     "teamTitle": "Meet the care team",
     "testimonialsTitle": "Patient feedback",
+    "testimonials": [
+      { "name": "Arta", "service": "Dental implants", "text": "The team explained each step clearly and I felt listened to throughout the consultation." },
+      { "name": "Besnik", "service": "Urgent dental care", "text": "They helped me understand the situation and gave me a clear plan for the next visit." },
+      { "name": "Megi", "service": "Teeth whitening", "text": "The visit was organised and the aftercare guidance was practical and reassuring." }
+    ],
+    "findTitle": "How to find us",
+    "findText": "You can find us in central Tirana. Contact our team to confirm opening hours and coordinate your visit.",
+    "privacyLink": "Read our privacy policy",
+    "aboutImageAlt": "Calm consultation between dentist and patient",
     "faqTitle": "Questions before booking",
     "finalTitle": "Ready to plan your visit?",
     "finalText": "Send an appointment request or contact the clinic by phone or email."
@@ -111,6 +128,7 @@
   "about": {
     "eyebrow": "About the clinic",
     "title": "A dental studio designed for trust, clarity and comfort.",
+    "imageAlt": "Calm consultation between dentist and patient",
     "intro": "Auro Dent is a modern dental clinic in Tirana where prevention, careful diagnosis and clear communication guide every treatment conversation.",
     "storyTitle": "Clinic story",
     "story": "At Auro Dent, prevention, careful diagnostics and open communication come before treatment decisions. Each visit begins with listening to your concerns and explaining the available options clearly.",
@@ -231,6 +249,8 @@
     "eyebrow": "Team",
     "title": "A calm, coordinated dental team",
     "intro": "Meet the clinicians and care professionals who help patients feel informed and comfortable at every stage.",
+    "specialties": { "generalCosmetic": "General and cosmetic dentistry", "implantSurgery": "Implant and oral surgery", "orthodontics": "Orthodontics and aligners", "pediatric": "Pediatric dentistry" },
+    "credentials": { "demoProfile": "Demo profile" },
     "bios": {
       "elira-kodra": "Focuses on preventive care, smile planning and clear patient communication.",
       "arbri-hoxha": "Plans implant and surgical cases with careful diagnostics and staged follow-up.",
@@ -297,9 +317,10 @@
       "service": "Treatment of interest",
       "message": "Message",
       "submit": "Request appointment",
-      "note": "Our team will use your details to respond to your appointment request. Please do not include sensitive medical records in this form."
+      "note": "Our team will use your details only to respond to your appointment request. Please do not include sensitive medical records in this form."
     },
-    "mapTitle": "Map showing the Auro Dent clinic location in Tirana"
+    "mapTitle": "Map showing the Auro Dent clinic location in Tirana",
+    "mapLink": "Open location in maps"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -313,7 +334,8 @@
   "notFound": {
     "title": "Page not found",
     "text": "The page you requested does not exist.",
-    "cta": "Go to homepage"
+    "cta": "Go to homepage",
+    "servicesCta": "Explore services"
   },
   "loading": "Loading page",
   "error": {

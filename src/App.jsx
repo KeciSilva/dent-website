@@ -381,7 +381,7 @@ function Hero() {
           </motion.div>
           <div className="relative mt-2 aspect-[16/11] overflow-hidden rounded-[1.5rem] border border-espresso/10 bg-white shadow-[0_30px_90px_-60px_rgba(14,59,64,0.55)] sm:aspect-[16/9] sm:rounded-[2rem] lg:mt-0 lg:aspect-[4/5] xl:aspect-[5/4]">
             <Picture
-              src="/images/suite.jpg"
+              src="/images/modern-dental-treatment-room.jpg"
               alt="Bright modern dental treatment room"
               sizes="(min-width: 1024px) 48vw, 100vw"
               className="h-full w-full object-cover"
@@ -436,7 +436,7 @@ function SmilePanel({ variant }) {
   return (
     <div className="relative h-full w-full overflow-hidden bg-espresso">
       <Picture
-        src={after ? '/images/after.png' : '/images/before.png'}
+        src={after ? '/images/teeth-whitening-after.png' : '/images/teeth-whitening-before.png'}
         alt={
           after
             ? 'The same smile after professional whitening and alignment'
@@ -874,7 +874,7 @@ function Technology() {
           className="relative order-2 lg:order-1"
         >
           <ParallaxImage
-            src="/images/scan.jpg"
+            src="/images/digital-dental-scan.jpg"
             alt="Digital dental scanner and diagnostic equipment"
             className="aspect-[5/4] rounded-[2rem] border border-espresso/10 shadow-[0_30px_75px_-62px_rgba(14,59,64,0.5)]"
             sizes="(min-width: 1024px) 48vw, 100vw"
@@ -1047,7 +1047,7 @@ function Team() {
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-espresso/[0.08]">
                 <Picture
-                  src={i === 0 ? '/images/img3.png' : i === 1 ? '/images/img2.png' : '/images/smile-face.jpg'}
+                  src={i === 0 ? '/images/orthodontic-aligners.png' : i === 1 ? '/images/implant-planning.png' : '/images/smile-consultation.jpg'}
                   alt={`${name}, ${role}`}
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -1303,13 +1303,13 @@ function Philosophy() {
           className="relative mx-auto w-full max-w-md lg:mx-0 lg:ml-auto"
         >
           <ParallaxImage
-            src="/images/img3.png"
+            src="/images/orthodontic-aligners.png"
             alt="A patient with a radiant, healthy smile in the clinic"
             className="aspect-[4/5] w-full rounded-3xl border border-espresso/10 shadow-[0_24px_60px_-55px_rgba(14,59,64,0.26)]"
           />
           <div className="absolute -bottom-10 -left-6 w-44 overflow-hidden rounded-2xl border-2 border-cream shadow-[0_16px_40px_-38px_rgba(14,59,64,0.32)] sm:w-56">
             <ParallaxImage
-              src="/images/img1.png"
+              src="/images/urgent-dental-care.png"
               alt="A pristine tooth model beside precision dental instruments"
               className="aspect-[4/3] w-full"
               range={25}
@@ -1331,19 +1331,19 @@ function Philosophy() {
 function Atelier() {
   const shots = [
     {
-      src: '/images/img2.png',
+      src: '/images/implant-planning.png',
       label: 'The Consultation',
       note: 'Reading your case together, in full transparency.',
       alt: 'A AURO clinician examining a dental model during a patient consultation',
     },
     {
-      src: '/images/img4.png',
+      src: '/images/pediatric-dentistry.png',
       label: 'The Suite',
       note: 'Light-filled, sterile-grade, designed to soothe.',
       alt: 'A light-filled, sterile-grade AURO treatment suite',
     },
     {
-      src: '/images/img1.png',
+      src: '/images/urgent-dental-care.png',
       label: 'Digital Diagnostics',
       note: 'Volumetric CBCT planning down to the micron.',
       alt: 'Precision dental instruments and a tooth model used for digital CBCT diagnostics',

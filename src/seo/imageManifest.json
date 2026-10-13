@@ -1,5 +1,5 @@
 {
-  "/images/after.png": {
+  "/images/teeth-whitening-after.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -37,7 +37,7 @@
     },
     "fallback": "/images/optimized/after-1024.jpg"
   },
-  "/images/before.png": {
+  "/images/teeth-whitening-before.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -75,7 +75,7 @@
     },
     "fallback": "/images/optimized/before-1024.jpg"
   },
-  "/images/consult.jpg": {
+  "/images/dentist-patient-consultation.jpg": {
     "width": 1600,
     "height": 1200,
     "aspect": 0.75,
@@ -125,7 +125,7 @@
     },
     "fallback": "/images/optimized/consult-1600.jpg"
   },
-  "/images/img1.png": {
+  "/images/urgent-dental-care.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -163,7 +163,7 @@
     },
     "fallback": "/images/optimized/img1-1024.jpg"
   },
-  "/images/img2.png": {
+  "/images/implant-planning.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -201,7 +201,7 @@
     },
     "fallback": "/images/optimized/img2-1024.jpg"
   },
-  "/images/img3.png": {
+  "/images/orthodontic-aligners.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -239,7 +239,7 @@
     },
     "fallback": "/images/optimized/img3-1024.jpg"
   },
-  "/images/img4.png": {
+  "/images/pediatric-dentistry.png": {
     "width": 1536,
     "height": 1024,
     "aspect": 0.6666666666666666,
@@ -277,7 +277,7 @@
     },
     "fallback": "/images/optimized/img4-1024.jpg"
   },
-  "/images/ritual.jpg": {
+  "/images/dental-care-ritual.jpg": {
     "width": 1600,
     "height": 2400,
     "aspect": 1.5,
@@ -327,7 +327,7 @@
     },
     "fallback": "/images/optimized/ritual-1600.jpg"
   },
-  "/images/scan.jpg": {
+  "/images/digital-dental-scan.jpg": {
     "width": 1600,
     "height": 1067,
     "aspect": 0.666875,
@@ -377,7 +377,7 @@
     },
     "fallback": "/images/optimized/scan-1600.jpg"
   },
-  "/images/smile-face.jpg": {
+  "/images/smile-consultation.jpg": {
     "width": 1400,
     "height": 2100,
     "aspect": 1.5,
@@ -415,7 +415,7 @@
     },
     "fallback": "/images/optimized/smile-face-1024.jpg"
   },
-  "/images/stone.jpg": {
+  "/images/dental-clinic-detail.jpg": {
     "width": 1600,
     "height": 1067,
     "aspect": 0.666875,
@@ -465,7 +465,7 @@
     },
     "fallback": "/images/optimized/stone-1600.jpg"
   },
-  "/images/suite.jpg": {
+  "/images/modern-dental-treatment-room.jpg": {
     "width": 1600,
     "height": 1070,
     "aspect": 0.66875,

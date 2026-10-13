@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
+import { siteUrl } from '@/lib/site-config'
 
 export const site = {
   name: 'Auro Dent',
   shortName: 'Auro',
   tagline: 'Modern dentistry. Confident smiles.',
-  url: 'https://www.aurodent.al',
+  url: siteUrl,
   footerNote: 'Modern dental care in Tirana, Albania.',
   locale: 'en_US',
   city: 'Tirana',
@@ -15,7 +16,7 @@ export const site = {
     address: 'Rruga Ibrahim Rugova 18, Tirana 1001, Albania',
     phone: '+355 69 000 0000',
     whatsapp: '+355 69 000 0000',
-    email: 'info@aurodent.al',
+    email: 'info@aurodent.example',
     mapsUrl: 'https://maps.google.com/?q=Auro%20Dental%20Studio%20Tirana',
     instagram: 'https://www.instagram.com/aurodent',
     hours: ['Mon-Fri 09:00-18:00', 'Sat 10:00-14:00'],

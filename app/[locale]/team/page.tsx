@@ -29,8 +29,8 @@ export default async function TeamPage({ params }: { params: Promise<{ locale: L
                 </div>
                 <div className="p-5">
                   <h2 className="font-heading text-xl font-extrabold text-slate-950">{doctor.name}</h2>
-                  <p className="mt-1 text-sm font-semibold text-[var(--accent)]">{doctor.specialty}</p>
-                  <p className="mt-3 text-sm text-slate-500">{doctor.credential}</p>
+                  <p className="mt-1 text-sm font-semibold text-[var(--accent)]">{messages.team.specialties[doctor.specialtyKey]}</p>
+                  <p className="mt-3 text-sm text-slate-500">{messages.team.credentials[doctor.credentialKey]}</p>
                   <p className="mt-4 text-sm leading-6 text-slate-600">{messages.team.bios[doctor.id]}</p>
                 </div>
               </article>

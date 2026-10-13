@@ -1,21 +1,20 @@
-// Clinic configuration. Keep contact and business details centralized here.
+// DEMO DATA: replace with real clinic information before production.
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://auro-dent.netlify.app'
+export const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING !== 'false'
+
 export const siteConfig = {
   name: 'Auro Dent',
   city: 'Tirana',
   country: 'Albania',
   address: 'Rruga Sami Frashëri 12, Tiranë 1001',
-  phone: '+355 69 123 4567',
-  email: 'info@aurodent.al',
-  url: 'https://www.aurodent.al',
+  phone: '+355 69 000 0000',
+  email: 'info@aurodent.example',
+  url: siteUrl,
   logo: '/favicons/icon-512.png',
   ogImage: '/og/og-cover-1200x630.jpg',
   mapEmbed:
     'https://www.google.com/maps?q=Rruga%20Sami%20Frash%C3%ABri%2012%20Tirana&output=embed',
-  social: {
-    instagram: 'https://instagram.com/aurodent',
-    facebook: 'https://facebook.com/aurodent',
-    linkedin: 'https://linkedin.com/company/aurodent',
-  },
+  social: {},
   hours: [
     { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '19:00' },
     { days: ['Saturday'], opens: '09:00', closes: '14:00' },
@@ -24,30 +23,30 @@ export const siteConfig = {
     {
       id: 'elira-kodra',
       name: 'Dr. Elira Kodra',
-      specialty: 'General and cosmetic dentistry',
-      credential: 'Dentist and cosmetic care',
-      image: '/images/smile-face.jpg',
+      specialtyKey: 'generalCosmetic',
+      credentialKey: 'demoProfile',
+      image: '/images/smile-consultation.jpg',
     },
     {
       id: 'arbri-hoxha',
       name: 'Dr. Arbri Hoxha',
-      specialty: 'Implant and oral surgery planning',
-      credential: 'Implant and oral surgery care',
-      image: '/images/img2.png',
+      specialtyKey: 'implantSurgery',
+      credentialKey: 'demoProfile',
+      image: '/images/implant-planning.png',
     },
     {
       id: 'mira-lika',
       name: 'Dr. Mira Lika',
-      specialty: 'Orthodontics and aligners',
-      credential: 'Orthodontic care',
-      image: '/images/img3.png',
+      specialtyKey: 'orthodontics',
+      credentialKey: 'demoProfile',
+      image: '/images/orthodontic-aligners.png',
     },
     {
       id: 'dea-prifti',
       name: 'Dr. Dea Prifti',
-      specialty: 'Pediatric dentistry',
-      credential: 'Pediatric dental care',
-      image: '/images/consult.jpg',
+      specialtyKey: 'pediatric',
+      credentialKey: 'demoProfile',
+      image: '/images/dentist-patient-consultation.jpg',
     },
   ],
   testimonials: [

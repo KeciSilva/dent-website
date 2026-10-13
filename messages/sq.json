@@ -30,16 +30,24 @@
     "duration": "Kohëzgjatja",
     "priceFrom": "Nga",
     "hours": "Orari",
+    "hoursWeekdays": "E hënë–E premte",
+    "hoursSaturday": "E shtunë",
+    "hoursClosed": "E diel — mbyllur",
+    "durations": { "short": "30–45 min", "whitening": "60–90 min", "caseBased": "Sipas rastit", "sameDay": "Në të njëjtën ditë kur ka disponueshmëri", "visits": "2–3 vizita" },
+    "from": "Nga",
+    "demoFooter": "Faqe demo për qëllime akademike. Biznesi është fiktiv.",
+    "demoTestimonials": "Përshtypje demo për qëllime akademike",
     "phone": "Telefoni",
     "email": "Email",
     "address": "Adresa",
     "follow": "Na ndiqni",
     "allServices": "Të gjitha shërbimet",
     "home": "Kryefaqja"
+    ,"breadcrumb": "Shtegu i navigimit"
   },
   "metadata": {
     "home": {
-      "title": "Klinikë Dentare në Tiranë",
+      "title": "Klinikë dentare në Tiranë | Auro Dent",
       "description": "Auro Dent ofron kujdes dentar modern dhe të personalizuar në Tiranë, me plane të qarta trajtimi për pacientë vendas dhe ndërkombëtarë."
     },
     "about": {
@@ -81,7 +89,7 @@
   },
   "home": {
     "heroEyebrow": "Klinikë dentare në Tiranë",
-    "heroTitle": "Kujdes dentar modern, i qetë që nga vizita e parë.",
+    "heroTitle": "Klinikë dentare në Tiranë për kujdes modern dhe të butë",
     "heroText": "Auro Dent sjell stomatologji moderne dhe të kujdesshme në Tiranë, me komunikim të qartë dhe kujdes të personalizuar për pacientë vendas dhe ndërkombëtarë.",
     "primaryCta": "Rezervo takim",
     "secondaryCta": "Shiko shërbimet",
@@ -93,17 +101,26 @@
     ],
     "servicesTitle": "Trajtime dentare për shëndet të përditshëm dhe buzëqeshje me vetëbesim.",
     "servicesText": "Çdo faqe shërbimi shpjegon për kë është trajtimi, çfarë të prisni dhe si mund të përgatiten pacientët.",
-    "aboutTitle": "Minimaliste, miqësore dhe e fokusuar klinikisht.",
+    "aboutTitle": "Rreth klinikës Auro Dent",
     "aboutText": "Historia e klinikës ndërtohet rreth parandalimit, diagnozës së kujdesshme dhe planeve të trajtimit që pacientët mund t’i kuptojnë para vendimit.",
     "whyTitle": "Pse të zgjidhni Auro Dent",
     "why": [
       "Kujdes në shqip dhe anglisht për pacientë vendas dhe ndërkombëtarë.",
       "Informacion i qartë për trajtimet dhe planifikim i thjeshtë i vizitës.",
       "Shpjegime të kujdesshme pa garanci ose pretendime të ekzagjeruara.",
-      "Bazë SEO lokale për kërkime në Tiranë dhe Shqipëri."
+      "Klinikë e vendosur në qendër të Tiranës, e lehtë për t’u arritur."
     ],
     "teamTitle": "Njihuni me ekipin",
     "testimonialsTitle": "Përshtypje pacientësh",
+    "testimonials": [
+      { "name": "Arta", "service": "Implante dentare", "text": "Mora shpjegime të qarta për çdo hap dhe u ndjeva e dëgjuar gjatë konsultës." },
+      { "name": "Besnik", "service": "Kujdes urgjent", "text": "Ekipi më ndihmoi të kuptoja situatën dhe më dha një plan të qartë për vizitën e radhës." },
+      { "name": "Megi", "service": "Zbardhim i dhëmbëve", "text": "Vizita ishte e organizuar dhe këshillat për kujdesin pas trajtimit ishin shumë të dobishme." }
+    ],
+    "findTitle": "Si të na gjeni",
+    "findText": "Na gjeni në qendër të Tiranës. Për orarin dhe koordinimin e vizitës, kontaktoni ekipin tonë.",
+    "privacyLink": "Lexoni politikën e privatësisë",
+    "aboutImageAlt": "Konsultë e qetë mes dentistit dhe pacientit",
     "faqTitle": "Pyetje para rezervimit",
     "finalTitle": "Gati të planifikoni vizitën?",
     "finalText": "Dërgoni një kërkesë për takim ose kontaktoni klinikën me telefon apo email."
@@ -111,6 +128,7 @@
   "about": {
     "eyebrow": "Rreth klinikës",
     "title": "Një studio dentare e ndërtuar për besim, qartësi dhe rehati.",
+    "imageAlt": "Konsultë e qetë mes dentistit dhe pacientit",
     "intro": "Auro Dent është një klinikë dentare moderne në Tiranë ku parandalimi, diagnoza e kujdesshme dhe komunikimi i qartë udhëheqin çdo bisedë për trajtimin.",
     "storyTitle": "Historia e klinikës",
     "story": "Në Auro Dent, parandalimi, diagnostikimi i kujdesshëm dhe komunikimi i hapur vijnë para vendimeve për trajtim. Çdo vizitë nis duke dëgjuar shqetësimet tuaja dhe duke shpjeguar qartë mundësitë.",
@@ -231,6 +249,8 @@
     "eyebrow": "Ekipi",
     "title": "Një ekip dentar i qetë dhe i koordinuar",
     "intro": "Njihuni me profesionistët që ndihmojnë pacientët të ndihen të informuar dhe të qetë në çdo fazë të trajtimit.",
+    "specialties": { "generalCosmetic": "Stomatologji e përgjithshme dhe estetike", "implantSurgery": "Implantologji dhe kirurgji orale", "orthodontics": "Ortodonci dhe aligner", "pediatric": "Stomatologji pediatrike" },
+    "credentials": { "demoProfile": "Profil demo" },
     "bios": {
       "elira-kodra": "Fokusohet te parandalimi, planifikimi estetik dhe komunikimi i qartë me pacientin.",
       "arbri-hoxha": "Planifikon raste implantologjike dhe kirurgjikale me diagnostikim të kujdesshëm dhe ndjekje të strukturuar.",
@@ -297,9 +317,10 @@
       "service": "Shërbimi që ju intereson",
       "message": "Mesazhi",
       "submit": "Kërko takim",
-      "note": "Formular vetëm për UI të detyrës së kursit; nuk ka backend real të lidhur."
+      "note": "Ekipi ynë do t’i përdorë të dhënat vetëm për t’iu përgjigjur kërkesës suaj. Mos dërgoni dokumente mjekësore të ndjeshme në këtë formular."
     },
-    "mapTitle": "Hartë që tregon vendndodhjen e klinikës Auro Dent në Tiranë"
+    "mapTitle": "Hartë që tregon vendndodhjen e klinikës Auro Dent në Tiranë",
+    "mapLink": "Hapni vendndodhjen në hartë"
   },
   "privacy": {
     "title": "Politika e Privatësisë",
@@ -313,7 +334,8 @@
   "notFound": {
     "title": "Faqja nuk u gjet",
     "text": "Faqja që kërkuat nuk ekziston.",
-    "cta": "Kthehu në kryefaqe"
+    "cta": "Kthehu në kryefaqe",
+    "servicesCta": "Shiko shërbimet"
   },
   "loading": "Faqja po ngarkohet",
   "error": {

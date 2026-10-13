@@ -23,7 +23,7 @@ export function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-slate-100 shadow-2xl shadow-slate-200">
             <Image
-              src="/images/suite.jpg"
+              src="/images/modern-dental-treatment-room.jpg"
               alt="Modern dental treatment room"
               fill
               priority

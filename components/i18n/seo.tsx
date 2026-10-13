@@ -14,7 +14,7 @@ export function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(payload).replace(/</g, '\\u003c') }}
     />
   )
 }
@@ -63,7 +63,8 @@ function buildPayload(data: JsonLdProps['data']) {
             closes: hours.closes,
           })),
           areaServed: [{ '@type': 'City', name: 'Tirana' }, { '@type': 'Country', name: 'Albania' }],
-          sameAs: Object.values(siteConfig.social),
+          availableLanguage: ['sq', 'en'],
+          ...(Object.values(siteConfig.social).length ? { sameAs: Object.values(siteConfig.social) } : {}),
         },
       ],
     }

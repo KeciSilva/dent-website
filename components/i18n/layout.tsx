@@ -71,12 +71,13 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: Mes
             <p className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> {siteConfig.address}</p>
             <p className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> <a href={`tel:${siteConfig.phone.replaceAll(' ', '')}`}>{siteConfig.phone}</a></p>
             <p className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p>
-            <p className="flex gap-2"><CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> Mon-Fri 09:00-19:00, Sat 09:00-14:00</p>
+            <p className="flex gap-2"><CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> {messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}, {messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</p>
           </div>
         </div>
       </div>
       <div className="border-t border-slate-200 px-4 py-5 text-center text-xs text-slate-500">
-        © 2026 {siteConfig.name}. {messages.common.city}, {messages.common.country}.
+        <p>© 2026 {siteConfig.name}. {messages.common.city}, {messages.common.country}.</p>
+        <p className="mt-1">{messages.common.demoFooter}</p>
       </div>
     </footer>
   )

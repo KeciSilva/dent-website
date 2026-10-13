@@ -24,7 +24,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <p className="mt-6 text-lg leading-8 text-slate-600">{messages.about.intro}</p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100">
-            <Image src="/images/consult.jpg" alt={messages.about.title} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <Image src="/images/dentist-patient-consultation.jpg" alt={messages.about.imageAlt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
           </div>
         </div>
       </section>

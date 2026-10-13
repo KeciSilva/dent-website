@@ -84,11 +84,11 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
                 <dl className="grid gap-4 text-sm">
                   <div>
                     <dt className="font-bold text-slate-950">{messages.common.duration}</dt>
-                    <dd className="mt-1 text-slate-600">{service.duration}</dd>
+                    <dd className="mt-1 text-slate-600">{messages.common.durations[service.durationKey]}</dd>
                   </div>
                   <div>
                     <dt className="font-bold text-slate-950">{messages.common.priceFrom}</dt>
-                    <dd className="mt-1 text-slate-600">{service.priceFrom}</dd>
+                    <dd className="mt-1 text-slate-600">{messages.common.from} {service.priceFrom}</dd>
                   </div>
                 </dl>
                 <h2 className="mt-8 font-heading text-xl font-extrabold text-slate-950">{messages.common.relatedServices}</h2>

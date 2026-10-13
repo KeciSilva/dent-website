@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { headers } from 'next/headers'
-import { siteConfig } from '@/lib/site-config'
+import { allowIndexing, siteConfig } from '@/lib/site-config'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   },
   applicationName: siteConfig.name,
   robots: {
-    index: true,
-    follow: true,
+    index: allowIndexing,
+    follow: allowIndexing,
     googleBot: {
-      index: true,
-      follow: true,
+      index: allowIndexing,
+      follow: allowIndexing,
       'max-image-preview': 'large',
       'max-snippet': -1,
       'max-video-preview': -1,

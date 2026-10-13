@@ -1,12 +1,9 @@
 import type { MetadataRoute } from 'next'
-import { siteConfig } from '@/lib/site-config'
+import { allowIndexing, siteConfig } from '@/lib/site-config'
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: allowIndexing ? { userAgent: '*', allow: '/' } : { userAgent: '*', disallow: '/' },
     sitemap: `${siteConfig.url}/sitemap.xml`,
   }
 }

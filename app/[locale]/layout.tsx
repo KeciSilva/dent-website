@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { JsonLd } from '@/components/i18n/seo'
 import { SiteFooter, SiteHeader } from '@/components/i18n/layout'
 import { getMessages } from '@/lib/i18n'
-import { isLocale, locales, siteConfig, type Locale } from '@/lib/site-config'
+import { allowIndexing, isLocale, locales, siteConfig, type Locale } from '@/lib/site-config'
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         'x-default': '/sq',
       },
     },
+    robots: { index: allowIndexing, follow: allowIndexing },
     openGraph: {
       title: messages.metadata.home.title,
       description: messages.metadata.home.description,

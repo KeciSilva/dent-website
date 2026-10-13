@@ -15,7 +15,7 @@ export function Breadcrumbs({
   messages: Messages
 }) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-8 text-sm text-slate-500">
+    <nav aria-label={messages.common.breadcrumb} className="mb-8 text-sm text-slate-500">
       <ol className="flex flex-wrap items-center gap-2">
         <li><Link href={`/${locale}`} className="hover:text-[var(--accent)]">{messages.common.home}</Link></li>
         {items.map((item) => (
@@ -47,8 +47,8 @@ export function ServiceGrid({ locale, messages, limit }: { locale: Locale; messa
             <h3 className="font-heading text-xl font-extrabold text-slate-950">{copy.name}</h3>
             <p className="mt-3 text-sm leading-6 text-slate-600">{copy.short}</p>
             <div className="mt-5 flex flex-wrap gap-2 text-xs text-slate-500">
-              <span className="rounded-full bg-slate-100 px-3 py-1">{service.duration}</span>
-              <span className="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-[var(--accent)]">{service.priceFrom}</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">{messages.common.durations[service.durationKey]}</span>
+              <span className="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-[var(--accent)]">{messages.common.from} {service.priceFrom}</span>
             </div>
           </Link>
         )

@@ -5,7 +5,7 @@ import { getMessages } from '@/lib/i18n'
 import { localizedMetadata } from '@/lib/metadata'
 import type { Locale } from '@/lib/site-config'
 
-const images = ['/images/img4.png', '/images/suite.jpg', '/images/after.png']
+const images = ['/images/pediatric-dentistry.png', '/images/modern-dental-treatment-room.jpg', '/images/teeth-whitening-after.png']
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params

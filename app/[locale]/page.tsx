@@ -40,7 +40,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-slate-100 shadow-2xl shadow-slate-200">
               <Image
-                src="/images/suite.jpg"
+                src="/images/modern-dental-treatment-room.jpg"
                 alt={messages.home.heroAlt}
                 fill
                 priority
@@ -81,7 +81,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
             </ul>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100">
-            <Image src="/images/consult.jpg" alt={messages.about.technologyTitle} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <Image src="/images/dentist-patient-consultation.jpg" alt={messages.home.aboutImageAlt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
           </div>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
             {siteConfig.team.slice(0, 4).map((doctor) => (
               <article key={doctor.id} className="rounded-2xl border border-slate-200 bg-white p-5">
                 <h3 className="font-heading text-xl font-extrabold text-slate-950">{doctor.name}</h3>
-                <p className="mt-1 text-sm font-semibold text-[var(--accent)]">{doctor.specialty}</p>
+                <p className="mt-1 text-sm font-semibold text-[var(--accent)]">{messages.team.specialties[doctor.specialtyKey]}</p>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{messages.team.bios[doctor.id]}</p>
               </article>
             ))}
@@ -111,6 +111,36 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
             <h2 className="mt-3 font-heading text-4xl font-extrabold text-slate-950">{messages.home.faqTitle}</h2>
           </div>
           <FaqList faqs={messages.faq.items.slice(0, 3)} />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container-page">
+          <p className="eyebrow">{messages.home.testimonialsTitle}</p>
+          <h2 className="mt-3 font-heading text-4xl font-extrabold text-slate-950">{messages.home.testimonialsTitle}</h2>
+          <p className="mt-3 text-sm text-slate-500">{messages.common.demoTestimonials}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {messages.home.testimonials.map((testimonial) => (
+              <article key={testimonial.name} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <p className="leading-7 text-slate-700">“{testimonial.text}”</p>
+                <p className="mt-5 font-bold text-slate-950">{testimonial.name}</p>
+                <p className="mt-1 text-sm text-[var(--accent)]">{testimonial.service}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-white">
+        <div className="container-page grid gap-8 rounded-2xl border border-slate-200 bg-[var(--background)] p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="eyebrow">{messages.home.findTitle}</p>
+            <h2 className="mt-3 font-heading text-3xl font-extrabold text-slate-950">{messages.home.findTitle}</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-slate-600">{messages.home.findText}</p>
+            <p className="mt-4 text-sm text-slate-700">{siteConfig.address} · {messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}</p>
+            <Link href={`/${locale}/privacy`} className="mt-4 inline-flex font-bold text-[var(--accent)]">{messages.home.privacyLink}</Link>
+          </div>
+          <a href={siteConfig.mapEmbed} target="_blank" rel="noreferrer" className="btn-secondary">{messages.contact.mapLink}</a>
         </div>
       </section>
 

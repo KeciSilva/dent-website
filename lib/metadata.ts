@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { hreflang } from '@/components/i18n/seo'
-import { siteConfig, type Locale } from '@/lib/site-config'
+import { allowIndexing, siteConfig, type Locale } from '@/lib/site-config'
 
 export function localizedMetadata({
   locale,
@@ -37,5 +37,6 @@ export function localizedMetadata({
       description,
       images: [siteConfig.ogImage],
     },
+    robots: { index: allowIndexing, follow: allowIndexing },
   }
 }
