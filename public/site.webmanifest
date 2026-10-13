@@ -1,7 +1,7 @@
 {
-  "name": "Aura Dental Studio",
-  "short_name": "Aura Dental",
-  "description": "Modern dental care in Tirana, Albania.",
+  "name": "Auro Dent",
+  "short_name": "Auro Dent",
+  "description": "Modern demo dental clinic website for Tirana, Albania.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

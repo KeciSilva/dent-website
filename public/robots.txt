@@ -1,7 +1,0 @@
-# VALOIS ORAL WELLNESS — robots.txt
-# TODO(launch): confirm the Sitemap URL matches the production domain.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://www.valoisoralwellness.com/sitemap.xml
