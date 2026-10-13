@@ -13,7 +13,7 @@ export function Hero() {
             Modern Dentistry. Confident Smiles.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            Aura Dental Studio provides modern, personalised dental care in Tirana for local patients and people travelling to Albania for treatment.
+            Auro Dent provides modern, personalised dental care in Tirana for local patients and people travelling to Albania for treatment.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary">Book an Appointment</Link>

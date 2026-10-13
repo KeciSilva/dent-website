@@ -1,14 +1,14 @@
-# SEO Audit: Aura Dental Studio
+# SEO Audit: Auro Dent
 
 ## Executive Summary
 
-Aura Dental Studio is being rebuilt as a modern dental clinic website for Tirana, Albania. The previous repository was a Vite React single-page concept site branded as VALOIS ORAL WELLNESS, with placeholder Geneva business details and only one indexable URL.
+Auro Dent is being rebuilt as a modern dental clinic website for Tirana, Albania. The previous repository was a Vite React single-page concept site branded as AURO DENT, with placeholder Tirana business details and only one indexable URL.
 
 The implementation now uses a Next.js App Router architecture with dedicated pages for core treatments, local SEO foundations, international patient information, blog content, contact conversion and technical SEO files.
 
 ## Website Overview
 
-- Brand: Aura Dental Studio
+- Brand: Auro Dent
 - Industry: Dental clinic / dentistry
 - Location target: Tirana, Albania
 - Audiences: local patients in Albania and international patients considering treatment in Albania
@@ -26,7 +26,7 @@ The implementation now uses a Next.js App Router architecture with dedicated pag
 | Problem | Why It Matters | Recommendation | Implementation | Result |
 | --- | --- | --- | --- | --- |
 | Single-page website | Treatment queries need dedicated, crawlable URLs. | Create service pages. | Added `/services` and eight `/services/[slug]` pages. | Stronger keyword-to-page targeting. |
-| Placeholder brand | Brand mismatch harms trust and relevance. | Replace Valois with Aura Dental Studio. | New site data and metadata use Aura Dental Studio. | Brand aligned with assignment. |
+| Placeholder brand | Brand mismatch harms trust and relevance. | Replace Auro with Auro Dent. | New site data and metadata use Auro Dent. | Brand aligned with assignment. |
 | No local landing structure | Local patients search by city and service. | Use natural Tirana/Albania references. | Titles and content reference Tirana where appropriate. | Improved local search relevance. |
 | Unsupported claims | Healthcare claims can mislead patients. | Remove or mark unverifiable claims. | Reviews, stats, doctor credentials and before/after cases are placeholders or removed. | Better trust and compliance. |
 | Thin treatment content | Service pages need useful information. | Add unique sections per service. | Each service includes intro, candidacy, benefits, process, aftercare and FAQ. | Higher content quality. |
@@ -83,8 +83,8 @@ Backlinks cannot be implemented in code. Recommended strategy:
 | --- | --- | --- | --- | --- | --- |
 | Framework mismatch | Vite SPA, not Next.js | Migrated active source to Next.js App Router | Real route-based architecture | HIGH | HIGH |
 | One indexable URL | Sitemap contained only homepage | Added sitemap route for pages, services and blog posts | Multiple indexable URLs | HIGH | HIGH |
-| Wrong brand | VALOIS ORAL WELLNESS | Aura Dental Studio content and metadata | Brand matches assignment | HIGH | HIGH |
-| Wrong location | Geneva/Dubai/New York placeholders | Tirana/Albania positioning | Local SEO relevance improved | HIGH | HIGH |
+| Wrong brand | AURO DENT | Auro Dent content and metadata | Brand matches assignment | HIGH | HIGH |
+| Wrong location | Tirana/Albania placeholders | Tirana/Albania positioning | Local SEO relevance improved | HIGH | HIGH |
 | No treatment landing pages | Services were cards on homepage | Added dedicated service pages | High-intent pages available | HIGH | HIGH |
 | Unsupported reviews/stats | Fake-looking ratings and numbers | Removed from new architecture | More trustworthy healthcare UX | HIGH | HIGH |
 | No international page | Missing | Added `/international-patients` | Supports dental tourism intent | MEDIUM | HIGH |

@@ -62,7 +62,7 @@ const ogSvg = Buffer.from(`
   </g>
   <text x="600" y="330" text-anchor="middle" fill="${CREAM}"
     font-family="Manrope, Arial, sans-serif" font-size="78" font-weight="800"
-    letter-spacing="2">VALOIS ORAL WELLNESS</text>
+    letter-spacing="2">AURO DENT</text>
   <text x="600" y="400" text-anchor="middle" fill="#9FD7DE"
     font-family="Inter, Arial, sans-serif" font-size="34" font-weight="400"
     letter-spacing="6">THE ARCHITECTURE OF A SMILE</text>

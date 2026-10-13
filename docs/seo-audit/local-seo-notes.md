@@ -2,7 +2,7 @@
 
 ## NAP Fields Needed
 
-- Clinic name: Aura Dental Studio
+- Clinic name: Auro Dent
 - Full address: TODO
 - Phone: TODO
 - WhatsApp: TODO

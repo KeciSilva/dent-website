@@ -1,30 +1,30 @@
 import type { Metadata } from 'next'
 
 export const site = {
-  name: 'Aura Dental Studio',
-  shortName: 'Aura',
+  name: 'Auro Dent',
+  shortName: 'Auro',
   tagline: 'Modern dentistry. Confident smiles.',
-  url: 'https://www.auradentalstudio.al',
+  url: 'https://www.aurodent.example',
   footerNote: 'Modern dental care in Tirana, Albania.',
   locale: 'en_US',
   city: 'Tirana',
   country: 'Albania',
   description:
-    'Aura Dental Studio is a modern dental clinic in Tirana, Albania, offering personalised dental care for local and international patients.',
+    'Auro Dent is a modern dental clinic in Tirana, Albania, offering personalised dental care for local and international patients.',
   contact: {
     address: 'Rruga Ibrahim Rugova 18, Tirana 1001, Albania',
     phone: '+355 69 000 0000',
     whatsapp: '+355 69 000 0000',
-    email: 'hello@auradentalstudio.al',
-    mapsUrl: 'https://maps.google.com/?q=Aura%20Dental%20Studio%20Tirana',
-    instagram: 'https://www.instagram.com/auradentalstudio',
+    email: 'hello@aurodent.example',
+    mapsUrl: 'https://maps.google.com/?q=Auro%20Dental%20Studio%20Tirana',
+    instagram: 'https://www.instagram.com/aurodent',
     hours: ['Mon-Fri 09:00-18:00', 'Sat 10:00-14:00'],
   },
-  social: ['https://www.instagram.com/auradentalstudio'] as string[],
+  social: ['https://www.instagram.com/aurodent'] as string[],
   dentist: {
     name: 'Dr. Elira Kodra',
     role: 'General and aesthetic dentist',
-    bio: 'Dr. Elira Kodra leads patient care at Aura Dental Studio with a calm, detail-focused approach to preventive, restorative and aesthetic dentistry.',
+    bio: 'Dr. Elira Kodra leads patient care at Auro Dent with a calm, detail-focused approach to preventive, restorative and aesthetic dentistry.',
     focus: ['General dentistry', 'Aesthetic planning', 'Restorative dentistry'],
     languages: ['Albanian', 'English', 'Italian'],
   },
@@ -55,12 +55,12 @@ export const services: Service[] = [
     slug: 'dental-implants',
     title: 'Dental Implants in Tirana',
     shortTitle: 'Dental Implants',
-    metaTitle: 'Dental Implants in Tirana | Aura Dental Studio',
+    metaTitle: 'Dental Implants in Tirana | Auro Dent',
     metaDescription:
-      'Learn about dental implant treatment in Tirana at Aura Dental Studio, including consultation, planning, restoration and aftercare.',
+      'Learn about dental implant treatment in Tirana at Auro Dent, including consultation, planning, restoration and aftercare.',
     summary: 'A stable tooth replacement option planned around your bone, bite and long-term oral health.',
     intro:
-      'Dental implants can replace missing teeth with a titanium fixture and a custom restoration. At Aura Dental Studio, implant planning should begin with diagnostics, medical history, oral health assessment and a clear discussion of options.',
+      'Dental implants can replace missing teeth with a titanium fixture and a custom restoration. At Auro Dent, implant planning should begin with diagnostics, medical history, oral health assessment and a clear discussion of options.',
     candidate:
       'A patient may be considered for implants when gums are healthy, bone support is suitable and general health allows oral surgery. Some people may need periodontal care, extraction healing or bone grafting before implant placement.',
     benefits: [
@@ -96,7 +96,7 @@ export const services: Service[] = [
     slug: 'dental-veneers',
     title: 'Dental Veneers in Tirana',
     shortTitle: 'Dental Veneers',
-    metaTitle: 'Dental Veneers in Tirana | Aura Dental Studio',
+    metaTitle: 'Dental Veneers in Tirana | Auro Dent',
     metaDescription:
       'Explore dental veneers in Tirana for shape, shade and smile improvements with careful planning and conservative treatment options.',
     summary: 'Thin custom restorations designed to improve tooth shape, colour and smile harmony.',
@@ -137,7 +137,7 @@ export const services: Service[] = [
     slug: 'dental-crowns',
     title: 'Dental Crowns in Tirana',
     shortTitle: 'Dental Crowns',
-    metaTitle: 'Dental Crowns in Tirana | Aura Dental Studio',
+    metaTitle: 'Dental Crowns in Tirana | Auro Dent',
     metaDescription:
       'Dental crowns in Tirana for damaged, root-treated or heavily restored teeth, planned for function, protection and appearance.',
     summary: 'Custom restorations that cover and protect teeth when simpler repairs may not be enough.',
@@ -178,7 +178,7 @@ export const services: Service[] = [
     slug: 'invisalign',
     title: 'Invisalign and Orthodontics in Tirana',
     shortTitle: 'Invisalign',
-    metaTitle: 'Invisalign in Tirana | Aura Dental Studio',
+    metaTitle: 'Invisalign in Tirana | Auro Dent',
     metaDescription:
       'Learn how clear aligner orthodontic treatment can help straighten teeth in Tirana with digital planning and regular progress checks.',
     summary: 'Clear aligner treatment for selected alignment and bite concerns, planned digitally.',
@@ -219,7 +219,7 @@ export const services: Service[] = [
     slug: 'teeth-whitening',
     title: 'Teeth Whitening in Tirana',
     shortTitle: 'Teeth Whitening',
-    metaTitle: 'Teeth Whitening in Tirana | Aura Dental Studio',
+    metaTitle: 'Teeth Whitening in Tirana | Auro Dent',
     metaDescription:
       'Professional teeth whitening in Tirana with assessment of enamel, gums, sensitivity risk and shade expectations.',
     summary: 'A supervised cosmetic treatment to brighten natural teeth after oral health is checked.',
@@ -259,7 +259,7 @@ export const services: Service[] = [
     slug: 'dental-fillings',
     title: 'Dental Fillings in Tirana',
     shortTitle: 'Dental Fillings',
-    metaTitle: 'Dental Fillings in Tirana | Aura Dental Studio',
+    metaTitle: 'Dental Fillings in Tirana | Auro Dent',
     metaDescription:
       'Tooth-coloured dental fillings in Tirana for cavities, chipped teeth and small repairs with preventive guidance.',
     summary: 'Conservative repair for cavities and minor tooth damage.',
@@ -300,7 +300,7 @@ export const services: Service[] = [
     slug: 'oral-surgery',
     title: 'Oral Surgery in Tirana',
     shortTitle: 'Oral Surgery',
-    metaTitle: 'Oral Surgery in Tirana | Aura Dental Studio',
+    metaTitle: 'Oral Surgery in Tirana | Auro Dent',
     metaDescription:
       'Oral surgery consultations in Tirana for extractions, implant preparation and selected surgical dental needs.',
     summary: 'Surgical dental care planned with clear explanations, diagnostics and aftercare.',
@@ -341,7 +341,7 @@ export const services: Service[] = [
     slug: 'general-dentistry',
     title: 'General Dentistry in Tirana',
     shortTitle: 'General Dentistry',
-    metaTitle: 'General Dentistry in Tirana | Aura Dental Studio',
+    metaTitle: 'General Dentistry in Tirana | Auro Dent',
     metaDescription:
       'General dental care in Tirana including checkups, hygiene, prevention, fillings and treatment planning for long-term oral health.',
     summary: 'Routine, preventive and restorative care for everyday dental health.',

@@ -2,17 +2,17 @@
 
 ## Before Screenshots To Capture
 
-- Old homepage branded VALOIS ORAL WELLNESS.
+- Old homepage branded AURO DENT.
 - Old single-page navigation with anchor links.
 - Old metadata in `index.html`.
 - Old `public/sitemap.xml` showing only one URL.
-- Old `public/robots.txt` pointing to the Valois domain.
+- Old `public/robots.txt` pointing to the Auro domain.
 - Old unsupported review/stat sections.
-- Old placeholder Geneva contact details.
+- Old placeholder Tirana contact details.
 
 ## After Screenshots To Capture
 
-- New Aura Dental Studio homepage.
+- New Auro Dent homepage.
 - `/services` overview page.
 - `/services/dental-implants` landing page.
 - `/international-patients` page.

@@ -18,13 +18,13 @@ export const siteConfig = {
   // TODO(launch): real production domain (no trailing slash).
   siteUrl: 'https://www.valoisoralwellness.com',
 
-  brand: 'VALOIS ORAL WELLNESS',
-  shortName: 'VALOIS',
+  brand: 'AURO DENT',
+  shortName: 'AURO',
   tagline: 'Healthy Smiles, Made Simple',
 
   // ≤ 155 chars — used for <meta name="description">, OG and Twitter.
   description:
-    'Modern dental care for checkups, emergencies, implants, clear aligners and smile design in a calm, technology-led clinic. Geneva · Dubai · New York.',
+    'Modern dental care for checkups, emergencies, implants, clear aligners and smile design in a calm, technology-led clinic. Tirana · Albania.',
 
   locale: 'en_US',
   themeColor: '#14343B', // espresso (deep ink)
@@ -32,7 +32,7 @@ export const siteConfig = {
 
   // TODO(launch): export a real 1200×630 social cover image to this path.
   ogImage: '/og/og-cover-1200x630.jpg',
-  ogImageAlt: 'VALOIS ORAL WELLNESS — Healthy Smiles, Made Simple',
+  ogImageAlt: 'AURO DENT — Healthy Smiles, Made Simple',
 
   logo: '/favicons/icon-512.png',
   priceRange: '$$$$',
@@ -43,13 +43,13 @@ export const siteConfig = {
   // Primary headquarters. Cities below are served from here / by branches.
   // TODO(launch): replace ALL of the following with real clinic data.
   business: {
-    name: 'VALOIS ORAL WELLNESS',
+    name: 'AURO DENT',
     telephone: '+41 22 000 00 00', // TODO
     email: 'hello@valoisoralwellness.com', // TODO
-    streetAddress: 'Rue du Rhône 1', // TODO
-    addressLocality: 'Geneva', // TODO
+    streetAddress: 'Rruga e Demos 12', // TODO
+    addressLocality: 'Tirana', // TODO
     postalCode: '1204', // TODO
-    addressRegion: 'Geneva', // TODO
+    addressRegion: 'Tirana', // TODO
     addressCountry: 'CH', // TODO
     geo: { lat: 46.2044, lng: 6.1432 }, // TODO
     // schema.org openingHoursSpecification shorthand → expanded in buildJsonLd
@@ -60,7 +60,7 @@ export const siteConfig = {
   },
 
   // Single-HQ model: the three markets are listed as areas served.
-  areaServed: ['Geneva', 'Dubai', 'New York'],
+  areaServed: ['Tirana', 'Albania'],
 
   // TODO(launch): real social profile URLs (or trim the list).
   sameAs: [

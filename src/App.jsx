@@ -36,7 +36,7 @@ import Picture from './seo/Picture'
 import { BookingProvider, useBooking } from './booking/Booking'
 
 /* =================================================================== */
-/*  VALOIS ORAL WELLNESS — a single, self-contained portfolio piece.   */
+/*  AURO DENT — a single, self-contained portfolio piece.   */
 /*  Palette: Aqua Mist #F0FAFB · Teal Accent #1BA8B5                   */
 /*           Deep Teal Ink #0E3B40                                     */
 /* =================================================================== */
@@ -1009,7 +1009,7 @@ function Stats() {
 
 function Team() {
   const team = [
-    ['Dr. Elise Valois', 'Cosmetic and restorative dentist', 'Veneers, bonding, smile design'],
+    ['Dr. Elise Auro', 'Cosmetic and restorative dentist', 'Veneers, bonding, smile design'],
     ['Dr. Karim Haddad', 'Implant and oral surgery lead', 'Guided implants, extractions, grafting'],
     ['Mira Chen, RDH', 'Preventive hygiene director', 'Gum therapy, whitening, prevention plans'],
   ]
@@ -1334,13 +1334,13 @@ function Atelier() {
       src: '/images/img2.png',
       label: 'The Consultation',
       note: 'Reading your case together, in full transparency.',
-      alt: 'A VALOIS clinician examining a dental model during a patient consultation',
+      alt: 'A AURO clinician examining a dental model during a patient consultation',
     },
     {
       src: '/images/img4.png',
       label: 'The Suite',
       note: 'Light-filled, sterile-grade, designed to soothe.',
-      alt: 'A light-filled, sterile-grade VALOIS treatment suite',
+      alt: 'A light-filled, sterile-grade AURO treatment suite',
     },
     {
       src: '/images/img1.png',
@@ -1420,13 +1420,13 @@ function Nav() {
           <div className="flex items-center justify-between gap-3">
             <a
               href="#main"
-              aria-label="VALOIS ORAL WELLNESS — home"
+              aria-label="AURO DENT — home"
               className="flex min-w-0 items-center gap-2 font-display text-base font-extrabold tracking-[-0.01em] text-espresso sm:text-lg"
             >
               <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-espresso text-cream">
                 <Plus className="h-4 w-4" />
               </span>
-              <span className="truncate">VALOIS</span>
+              <span className="truncate">AURO</span>
             </a>
             <nav
               aria-label="Primary"
@@ -1514,7 +1514,7 @@ function Footer() {
         <div className="mt-16 grid gap-4 text-left md:grid-cols-3">
           {[
             ['Call', '+41 22 000 00 00', 'For urgent dental pain, call before booking online.'],
-            ['Visit', 'Rue du Rhône 1, Geneva', 'A short walk from public transit and city parking.'],
+            ['Visit', 'Rruga e Demos 12, Tirana', 'A short walk from public transit and city parking.'],
             ['Hours', 'Mon-Fri 09:00-18:00', 'Saturday appointments from 10:00-14:00.'],
           ].map(([title, value, note]) => (
             <div key={title} className="rounded-2xl border border-espresso/10 bg-white/50 p-6 backdrop-blur">
@@ -1533,10 +1533,10 @@ function Footer() {
 
         <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-espresso/10 pt-8 text-xs uppercase tracking-[0.2em] text-espresso/45 sm:flex-row">
           <span className="font-display font-bold text-espresso">
-            VALOIS ORAL WELLNESS
+            AURO DENT
           </span>
           <span>© 2026 · Crafted with precision · Photography via Unsplash</span>
-          <span>Geneva · Dubai · New York</span>
+          <span>Tirana · Albania</span>
         </div>
       </div>
     </footer>
