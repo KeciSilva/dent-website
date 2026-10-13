@@ -1,12 +1,8 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { headers } from 'next/headers'
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin', 'latin-ext'], variable: '--font-inter', display: 'swap' })
-const jakarta = Plus_Jakarta_Sans({ subsets: ['latin', 'latin-ext'], variable: '--font-heading', display: 'swap' })
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -37,7 +33,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   const locale = headerList.get('x-auro-locale') || 'sq'
 
   return (
-    <html lang={locale} className={`${inter.variable} ${jakarta.variable}`}>
+    <html lang={locale}>
       <body>
         {children}
       </body>
