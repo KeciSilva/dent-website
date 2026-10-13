@@ -76,7 +76,7 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: Mes
         </div>
       </div>
       <div className="border-t border-slate-200 px-4 py-5 text-center text-xs text-slate-500">
-        © 2026 {siteConfig.name}. {messages.common.demoBadge}.
+        © 2026 {siteConfig.name}. {messages.common.city}, {messages.common.country}.
       </div>
     </footer>
   )

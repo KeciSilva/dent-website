@@ -21,14 +21,14 @@
     "siteName": "Auro Dent",
     "city": "Tirana",
     "country": "Albania",
-    "demoBadge": "Demo content for course assignment",
+    "ctaEyebrow": "Personalised care in Tirana",
     "learnMore": "Learn more",
     "readArticle": "Read article",
     "relatedServices": "Related services",
     "bookCta": "Book appointment",
     "contactCta": "Contact the clinic",
     "duration": "Duration",
-    "priceFrom": "Demo price",
+    "priceFrom": "From",
     "hours": "Opening hours",
     "phone": "Phone",
     "email": "Email",
@@ -40,39 +40,39 @@
   "metadata": {
     "home": {
       "title": "Dental Clinic in Tirana",
-      "description": "Auro Dent is a modern demo dental clinic website for Tirana with bilingual content, service pages and local SEO foundations."
+      "description": "Auro Dent provides modern, personalised dental care in Tirana, with clear treatment plans for local and international patients."
     },
     "about": {
       "title": "About Auro Dent",
-      "description": "Learn about Auro Dent, a minimalist demo dental clinic in Tirana focused on gentle care, modern planning and clear communication."
+      "description": "Learn about Auro Dent, a modern dental clinic in Tirana focused on thoughtful care, clear planning and comfortable visits."
     },
     "services": {
       "title": "Dental Services in Tirana",
-      "description": "Explore demo dental services at Auro Dent, including check-ups, whitening, implants, orthodontics, pediatric dentistry and emergency care."
+      "description": "Explore dental services at Auro Dent, including check-ups, whitening, implants, orthodontics, pediatric dentistry and urgent care."
     },
     "team": {
       "title": "Dental Team in Tirana",
-      "description": "Meet the demo dental team at Auro Dent in Tirana."
+      "description": "Meet the dental team at Auro Dent in Tirana and learn about their approach to patient care."
     },
     "gallery": {
       "title": "Gallery and Before-After",
-      "description": "View a clean demo gallery structure for Auro Dent treatment examples and clinic photography."
+      "description": "Explore the Auro Dent clinic, treatment environment and smile-care approach."
     },
     "blog": {
       "title": "Dental Blog",
-      "description": "Read short demo dental education articles from Auro Dent."
+      "description": "Read practical dental education articles from the Auro Dent team."
     },
     "faq": {
       "title": "Dental FAQ",
-      "description": "Answers to common demo patient questions about appointments, whitening, implants, emergency care and children’s dentistry."
+      "description": "Answers to common patient questions about appointments, whitening, implants, urgent care and children’s dentistry."
     },
     "contact": {
       "title": "Contact and Book Appointment",
-      "description": "Contact Auro Dent in Tirana, view demo opening hours and request a dental appointment."
+      "description": "Contact Auro Dent in Tirana, view opening hours and request a dental appointment."
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Demo privacy policy for the Auro Dent course assignment website."
+      "description": "Read the Auro Dent privacy policy and how appointment enquiries are handled."
     },
     "notFound": {
       "title": "Page not found",
@@ -82,7 +82,7 @@
   "home": {
     "heroEyebrow": "Dental clinic in Tirana",
     "heroTitle": "Modern dental care, calm from the first visit.",
-    "heroText": "Auro Dent is a bilingual course-assignment dental clinic website with realistic demo content for local patients in Tirana and international visitors considering care in Albania.",
+    "heroText": "Auro Dent brings modern, thoughtful dentistry to Tirana, with clear communication and personalised care for local and international patients.",
     "primaryCta": "Book an appointment",
     "secondaryCta": "Explore services",
     "heroAlt": "Bright modern dental clinic treatment room",
@@ -97,9 +97,9 @@
     "aboutText": "The clinic story is built around prevention, careful diagnosis and treatment plans that patients can understand before they decide.",
     "whyTitle": "Why choose Auro Dent",
     "why": [
-      "Crawlable bilingual content for Albanian and English-speaking patients.",
-      "Transparent demo pricing and realistic appointment pathways.",
-      "Healthcare copy written without guarantees or exaggerated claims.",
+      "Care available in Albanian and English for local and international patients.",
+      "Clear treatment information and straightforward appointment planning.",
+      "Thoughtful explanations without guarantees or exaggerated claims.",
       "Local SEO foundations for Tirana and Albania search intent."
     ],
     "teamTitle": "Meet the care team",
@@ -111,9 +111,9 @@
   "about": {
     "eyebrow": "About the clinic",
     "title": "A dental studio designed for trust, clarity and comfort.",
-    "intro": "Auro Dent is a realistic demo dental clinic website for Tirana. The content shows how a professional clinic can explain treatment choices, guide patients and support local SEO without unsupported claims.",
+    "intro": "Auro Dent is a modern dental clinic in Tirana where prevention, careful diagnosis and clear communication guide every treatment conversation.",
     "storyTitle": "Clinic story",
-    "story": "The clinic is presented as a calm, modern practice where prevention, diagnostics and communication come before treatment decisions.",
+    "story": "At Auro Dent, prevention, careful diagnostics and open communication come before treatment decisions. Each visit begins with listening to your concerns and explaining the available options clearly.",
     "valuesTitle": "Values",
     "values": [
       { "title": "Clear information", "text": "Patients should understand their options, timing and aftercare." },
@@ -121,9 +121,9 @@
       { "title": "Friendly visits", "text": "The tone is warm, organised and reassuring." }
     ],
     "technologyTitle": "Technology",
-    "technology": "Digital scans, clinical photography and careful treatment planning are described as part of the patient journey.",
+    "technology": "Digital scans, clinical photography and careful treatment planning help us explain findings clearly and prepare each stage of care.",
     "teamTitle": "Team approach",
-    "team": "The demo team covers general care, implants, orthodontics and pediatric dentistry."
+    "team": "Our team brings together general dentistry, implant care, orthodontics and paediatric dentistry."
   },
   "servicesPage": {
     "eyebrow": "Services",
@@ -230,7 +230,7 @@
   "team": {
     "eyebrow": "Team",
     "title": "A calm, coordinated dental team",
-    "intro": "The following profiles are fictional demo content created for the course assignment.",
+    "intro": "Meet the clinicians and care professionals who help patients feel informed and comfortable at every stage.",
     "bios": {
       "elira-kodra": "Focuses on preventive care, smile planning and clear patient communication.",
       "arbri-hoxha": "Plans implant and surgical cases with careful diagnostics and staged follow-up.",
@@ -241,7 +241,7 @@
   "gallery": {
     "eyebrow": "Gallery",
     "title": "Clinic gallery and treatment examples",
-    "intro": "A clean placeholder gallery for course presentation. In a production clinic site, patient images should only be published with consent and accurate context.",
+    "intro": "A glimpse into our calm clinical environment and the detail we bring to every patient visit.",
     "items": [
       { "title": "Reception", "alt": "Minimal dental clinic reception area" },
       { "title": "Treatment room", "alt": "Clean dental treatment room with modern equipment" },
@@ -251,7 +251,7 @@
   "blog": {
     "eyebrow": "Blog",
     "title": "Dental education articles",
-    "intro": "Short demo articles support patient education and internal linking.",
+    "intro": "Practical articles to help you make informed decisions about daily oral health and treatment options.",
     "posts": {
       "visitDentist": {
         "title": "How often should you visit the dentist?",
@@ -283,7 +283,7 @@
       { "q": "How do I book an appointment?", "a": "Use the booking form, call the clinic or send an email with your preferred time and treatment interest." },
       { "q": "Do you treat dental emergencies?", "a": "Emergency appointments are coordinated based on availability and symptom urgency." },
       { "q": "Can international patients contact the clinic before travelling?", "a": "Yes. Remote enquiries can help prepare the first consultation, although final diagnosis requires an in-person exam." },
-      { "q": "Are prices guaranteed online?", "a": "No. Demo prices are indicative only; real treatment costs depend on diagnosis and treatment planning." }
+      { "q": "Are prices guaranteed online?", "a": "Online prices are indicative. The final cost depends on your diagnosis, treatment options and individual care plan." }
     ]
   },
   "contact": {
@@ -297,13 +297,13 @@
       "service": "Treatment of interest",
       "message": "Message",
       "submit": "Request appointment",
-      "note": "Form UI only for the course assignment; no real backend is connected."
+      "note": "Our team will use your details to respond to your appointment request. Please do not include sensitive medical records in this form."
     },
-    "mapTitle": "Map showing Auro Dent demo location in Tirana"
+    "mapTitle": "Map showing the Auro Dent clinic location in Tirana"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "intro": "This demo privacy policy explains how a clinic website may describe contact form and analytics data handling.",
+    "intro": "This privacy policy explains how Auro Dent handles information shared through appointment enquiries and website visits.",
     "sections": [
       { "title": "Contact form data", "text": "Information submitted through the form would be used to respond to appointment requests." },
       { "title": "Medical information", "text": "Patients should avoid sending sensitive medical records through unsecured forms unless the clinic provides a secure process." },

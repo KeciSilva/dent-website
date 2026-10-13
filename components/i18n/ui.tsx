@@ -74,7 +74,7 @@ export function CTA({ locale, messages }: { locale: Locale; messages: Messages }
   return (
     <section className="section bg-[var(--accent)] text-white">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/75">{messages.common.demoBadge}</p>
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/75">{messages.common.ctaEyebrow}</p>
         <h2 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-5xl">{messages.home.finalTitle}</h2>
         <p className="mx-auto mt-5 max-w-2xl text-white/85">{messages.home.finalText}</p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">

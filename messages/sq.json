@@ -21,14 +21,14 @@
     "siteName": "Auro Dent",
     "city": "Tiranë",
     "country": "Shqipëri",
-    "demoBadge": "Përmbajtje demo për detyrë kursi",
+    "ctaEyebrow": "Kujdes i personalizuar në Tiranë",
     "learnMore": "Mëso më shumë",
     "readArticle": "Lexo artikullin",
     "relatedServices": "Shërbime të lidhura",
     "bookCta": "Rezervo takim",
     "contactCta": "Kontakto klinikën",
     "duration": "Kohëzgjatja",
-    "priceFrom": "Çmim demo",
+    "priceFrom": "Nga",
     "hours": "Orari",
     "phone": "Telefoni",
     "email": "Email",
@@ -40,27 +40,27 @@
   "metadata": {
     "home": {
       "title": "Klinikë Dentare në Tiranë",
-      "description": "Auro Dent është një website demo për klinikë dentare moderne në Tiranë, me përmbajtje dygjuhëshe, faqe shërbimesh dhe bazë për SEO lokale."
+      "description": "Auro Dent ofron kujdes dentar modern dhe të personalizuar në Tiranë, me plane të qarta trajtimi për pacientë vendas dhe ndërkombëtarë."
     },
     "about": {
       "title": "Rreth Auro Dent",
-      "description": "Mësoni për Auro Dent, një klinikë dentare demo në Tiranë me kujdes të qetë, planifikim modern dhe komunikim të qartë."
+      "description": "Mësoni për Auro Dent, një klinikë dentare moderne në Tiranë e fokusuar te kujdesi i menduar, planifikimi i qartë dhe vizitat komode."
     },
     "services": {
       "title": "Shërbime Dentare në Tiranë",
-      "description": "Eksploroni shërbimet dentare demo në Auro Dent: kontrolle, zbardhim, implante, ortodonci, pedodonci dhe urgjenca dentare."
+      "description": "Eksploroni shërbimet dentare të Auro Dent: kontrolle, zbardhim, implante, ortodonci, pedodonci dhe kujdes urgjent."
     },
     "team": {
       "title": "Ekipi Dentar në Tiranë",
-      "description": "Njihuni me ekipin demo të Auro Dent në Tiranë."
+      "description": "Njihuni me ekipin dentar të Auro Dent në Tiranë dhe qasjen e tyre ndaj kujdesit për pacientët."
     },
     "gallery": {
       "title": "Galeri dhe Para-Pas",
-      "description": "Shikoni strukturën demo të galerisë për Auro Dent me shembuj trajtimesh dhe foto klinike."
+      "description": "Shihni klinikën Auro Dent, ambientin e trajtimeve dhe qasjen tonë ndaj kujdesit për buzëqeshjen."
     },
     "blog": {
       "title": "Blog Dentar",
-      "description": "Lexoni artikuj të shkurtër edukues demo nga Auro Dent."
+      "description": "Lexoni artikuj praktikë edukues për shëndetin oral nga ekipi i Auro Dent."
     },
     "faq": {
       "title": "Pyetje të Shpeshta Dentare",
@@ -68,11 +68,11 @@
     },
     "contact": {
       "title": "Kontakt dhe Rezervim Takimi",
-      "description": "Kontaktoni Auro Dent në Tiranë, shikoni orarin demo dhe kërkoni një takim dentar."
+      "description": "Kontaktoni Auro Dent në Tiranë, shikoni orarin e punës dhe kërkoni një takim dentar."
     },
     "privacy": {
       "title": "Politika e Privatësisë",
-      "description": "Politikë privatësie demo për website-in e detyrës së kursit Auro Dent."
+      "description": "Lexoni politikën e privatësisë së Auro Dent dhe mënyrën si trajtohen kërkesat për takime."
     },
     "notFound": {
       "title": "Faqja nuk u gjet",
@@ -82,7 +82,7 @@
   "home": {
     "heroEyebrow": "Klinikë dentare në Tiranë",
     "heroTitle": "Kujdes dentar modern, i qetë që nga vizita e parë.",
-    "heroText": "Auro Dent është një website dygjuhësh për detyrë kursi, me përmbajtje realiste demo për pacientë lokalë në Tiranë dhe vizitorë ndërkombëtarë që konsiderojnë trajtim në Shqipëri.",
+    "heroText": "Auro Dent sjell stomatologji moderne dhe të kujdesshme në Tiranë, me komunikim të qartë dhe kujdes të personalizuar për pacientë vendas dhe ndërkombëtarë.",
     "primaryCta": "Rezervo takim",
     "secondaryCta": "Shiko shërbimet",
     "heroAlt": "Dhomë moderne dhe e ndritshme trajtimi dentar",
@@ -97,9 +97,9 @@
     "aboutText": "Historia e klinikës ndërtohet rreth parandalimit, diagnozës së kujdesshme dhe planeve të trajtimit që pacientët mund t’i kuptojnë para vendimit.",
     "whyTitle": "Pse të zgjidhni Auro Dent",
     "why": [
-      "Përmbajtje dygjuhëshe e indeksueshme për pacientë shqiptarë dhe anglishtfolës.",
-      "Çmime demo transparente dhe rrugë realiste rezervimi.",
-      "Tekst shëndetësor pa garanci ose pretendime të ekzagjeruara.",
+      "Kujdes në shqip dhe anglisht për pacientë vendas dhe ndërkombëtarë.",
+      "Informacion i qartë për trajtimet dhe planifikim i thjeshtë i vizitës.",
+      "Shpjegime të kujdesshme pa garanci ose pretendime të ekzagjeruara.",
       "Bazë SEO lokale për kërkime në Tiranë dhe Shqipëri."
     ],
     "teamTitle": "Njihuni me ekipin",
@@ -111,9 +111,9 @@
   "about": {
     "eyebrow": "Rreth klinikës",
     "title": "Një studio dentare e ndërtuar për besim, qartësi dhe rehati.",
-    "intro": "Auro Dent është një website realist demo për klinikë dentare në Tiranë. Përmbajtja tregon si një klinikë profesionale mund të shpjegojë zgjedhjet e trajtimit, të udhëzojë pacientët dhe të mbështesë SEO lokale pa pretendime të pambështetura.",
+    "intro": "Auro Dent është një klinikë dentare moderne në Tiranë ku parandalimi, diagnoza e kujdesshme dhe komunikimi i qartë udhëheqin çdo bisedë për trajtimin.",
     "storyTitle": "Historia e klinikës",
-    "story": "Klinika paraqitet si një praktikë moderne dhe e qetë ku parandalimi, diagnostikimi dhe komunikimi vijnë para vendimeve për trajtim.",
+    "story": "Në Auro Dent, parandalimi, diagnostikimi i kujdesshëm dhe komunikimi i hapur vijnë para vendimeve për trajtim. Çdo vizitë nis duke dëgjuar shqetësimet tuaja dhe duke shpjeguar qartë mundësitë.",
     "valuesTitle": "Vlerat",
     "values": [
       { "title": "Informim i qartë", "text": "Pacientët duhet të kuptojnë opsionet, kohën dhe kujdesin pas trajtimit." },
@@ -121,9 +121,9 @@
       { "title": "Vizita miqësore", "text": "Toni është i ngrohtë, i organizuar dhe qetësues." }
     ],
     "technologyTitle": "Teknologjia",
-    "technology": "Skanimet digjitale, fotografia klinike dhe planifikimi i kujdesshëm paraqiten si pjesë e rrugëtimit të pacientit.",
+    "technology": "Skanimet digjitale, fotografia klinike dhe planifikimi i kujdesshëm na ndihmojnë t’i shpjegojmë qartë gjetjet dhe të përgatisim çdo fazë të kujdesit.",
     "teamTitle": "Qasja e ekipit",
-    "team": "Ekipi demo mbulon kujdesin e përgjithshëm, implantet, ortodoncinë dhe stomatologjinë për fëmijë."
+    "team": "Ekipi ynë bashkon stomatologjinë e përgjithshme, implantologjinë, ortodoncinë dhe stomatologjinë pediatrike."
   },
   "servicesPage": {
     "eyebrow": "Shërbimet",
@@ -230,7 +230,7 @@
   "team": {
     "eyebrow": "Ekipi",
     "title": "Një ekip dentar i qetë dhe i koordinuar",
-    "intro": "Profilet më poshtë janë përmbajtje fiktive demo të krijuara për detyrën e kursit.",
+    "intro": "Njihuni me profesionistët që ndihmojnë pacientët të ndihen të informuar dhe të qetë në çdo fazë të trajtimit.",
     "bios": {
       "elira-kodra": "Fokusohet te parandalimi, planifikimi estetik dhe komunikimi i qartë me pacientin.",
       "arbri-hoxha": "Planifikon raste implantologjike dhe kirurgjikale me diagnostikim të kujdesshëm dhe ndjekje të strukturuar.",
@@ -241,7 +241,7 @@
   "gallery": {
     "eyebrow": "Galeria",
     "title": "Galeri klinike dhe shembuj trajtimesh",
-    "intro": "Një galeri e pastër placeholder për prezantimin e kursit. Në një website prodhimi, imazhet e pacientëve publikohen vetëm me pëlqim dhe kontekst të saktë.",
+    "intro": "Një vështrim i shkurtër në ambientin tonë të qetë klinik dhe kujdesin që i kushtojmë çdo vizite.",
     "items": [
       { "title": "Recepsioni", "alt": "Recepsion minimalist i klinikës dentare" },
       { "title": "Dhoma e trajtimit", "alt": "Dhomë e pastër trajtimi dentar me pajisje moderne" },
@@ -251,7 +251,7 @@
   "blog": {
     "eyebrow": "Blog",
     "title": "Artikuj edukues dentarë",
-    "intro": "Artikuj të shkurtër demo që mbështesin edukimin e pacientëve dhe lidhjet e brendshme.",
+    "intro": "Artikuj praktikë që ju ndihmojnë të merrni vendime të informuara për shëndetin oral dhe trajtimet dentare.",
     "posts": {
       "visitDentist": {
         "title": "Sa shpesh duhet të shkoni te dentisti?",
@@ -283,7 +283,7 @@
       { "q": "Si mund të rezervoj takim?", "a": "Përdorni formularin, telefononi klinikën ose dërgoni email me orarin e preferuar dhe shërbimin që ju intereson." },
       { "q": "A trajtoni urgjenca dentare?", "a": "Takimet urgjente koordinohen sipas disponueshmërisë dhe rëndësisë së simptomave." },
       { "q": "A mund të kontaktojnë pacientët ndërkombëtarë para udhëtimit?", "a": "Po. Kërkesat në distancë ndihmojnë përgatitjen e konsultës së parë, por diagnoza finale kërkon kontroll në klinikë." },
-      { "q": "A janë të garantuara çmimet online?", "a": "Jo. Çmimet demo janë orientuese; kostot reale varen nga diagnoza dhe plani i trajtimit." }
+      { "q": "A janë të garantuara çmimet online?", "a": "Çmimet online janë orientuese. Kostoja përfundimtare varet nga diagnoza, alternativat dhe plani individual i trajtimit." }
     ]
   },
   "contact": {
@@ -299,11 +299,11 @@
       "submit": "Kërko takim",
       "note": "Formular vetëm për UI të detyrës së kursit; nuk ka backend real të lidhur."
     },
-    "mapTitle": "Hartë që tregon vendndodhjen demo të Auro Dent në Tiranë"
+    "mapTitle": "Hartë që tregon vendndodhjen e klinikës Auro Dent në Tiranë"
   },
   "privacy": {
     "title": "Politika e Privatësisë",
-    "intro": "Kjo politikë demo shpjegon si një website klinike mund të përshkruajë trajtimin e të dhënave nga formulari dhe analizat.",
+    "intro": "Kjo politikë privatësie shpjegon si Auro Dent trajton informacionin e ndarë përmes kërkesave për takim dhe vizitave në website.",
     "sections": [
       { "title": "Të dhënat e formularit", "text": "Informacioni i dërguar përmes formularit do të përdorej për t’iu përgjigjur kërkesave për takim." },
       { "title": "Informacioni mjekësor", "text": "Pacientët nuk duhet të dërgojnë dokumente të ndjeshme mjekësore përmes formularëve të pasiguruar nëse klinika nuk ofron proces të sigurt." },

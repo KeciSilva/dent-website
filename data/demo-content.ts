@@ -1,4 +1,4 @@
-// DEMO DATA - treatment names, durations and prices are fictional for coursework.
+// Treatment catalogue used across service cards, metadata and related links.
 export const services = [
   {
     slug: 'general-dentistry',
