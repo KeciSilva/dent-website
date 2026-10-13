@@ -23,7 +23,10 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: Lo
             <h1 className="mt-4 font-heading text-5xl font-extrabold tracking-tight text-slate-950">{messages.faq.title}</h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">{messages.faq.intro}</p>
           </div>
-          <FaqList faqs={messages.faq.items} />
+          <div>
+            <h2 className="font-heading text-2xl font-extrabold text-slate-950">{messages.faq.questionsTitle}</h2>
+            <div className="mt-5"><FaqList faqs={messages.faq.items} /></div>
+          </div>
         </div>
       </section>
       <JsonLd data={{ type: 'faq', faqs: messages.faq.items }} />

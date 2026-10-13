@@ -16,6 +16,7 @@ export default async function NotFound() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link href={`/${locale}`} className="btn-primary">{messages.notFound.cta}</Link>
           <Link href={`/${locale}/services`} className="btn-secondary">{messages.notFound.servicesCta}</Link>
+          <Link href={`/${locale}/contact`} className="btn-secondary">{messages.notFound.contactCta}</Link>
         </div>
       </div>
     </section>

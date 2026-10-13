@@ -29,6 +29,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: L
               return (
                 <article key={post.slug} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                   <time className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent)]">{post.date}</time>
+                  <p className="mt-3 text-sm text-slate-500">{messages.blog.authorLabel}: Auro Dent</p>
                   <h2 className="mt-3 font-heading text-2xl font-extrabold text-slate-950">
                     <Link href={`/${locale}/blog/${post.slug}`} className="hover:text-[var(--accent)]">{copy.title}</Link>
                   </h2>

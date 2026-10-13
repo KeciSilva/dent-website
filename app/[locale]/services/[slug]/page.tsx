@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return localizedMetadata({
     locale,
     path: `/services/${service.slug}`,
-    title: copy.name,
-    description: copy.short,
+    title: copy.seoTitle,
+    description: copy.metaDescription,
   })
 }
 
@@ -70,6 +70,11 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
                     </li>
                   ))}
                 </ol>
+              </section>
+
+              <section className="mt-12">
+                <h2 className="font-heading text-3xl font-extrabold text-slate-950">{messages.serviceDetail.expectTitle}</h2>
+                <p className="mt-4 leading-8 text-slate-600">{copy.expect}</p>
               </section>
 
               <section className="mt-12">

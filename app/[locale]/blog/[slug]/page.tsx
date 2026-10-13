@@ -39,6 +39,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
           <Breadcrumbs locale={locale} messages={messages} items={[{ label: messages.nav.blog, href: `/${locale}/blog` }, { label: copy.title }]} />
           <time className="eyebrow">{post.date}</time>
           <h1 className="mt-4 font-heading text-5xl font-extrabold tracking-tight text-slate-950">{copy.title}</h1>
+          <p className="mt-3 text-sm text-slate-500">{messages.blog.authorLabel}: Auro Dent</p>
           <p className="mt-6 text-xl leading-9 text-slate-600">{copy.description}</p>
           <div className="mt-12 space-y-7">
             {copy.body.map((paragraph) => (

@@ -124,6 +124,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
               <article key={testimonial.name} className="rounded-2xl border border-slate-200 bg-white p-6">
                 <p className="leading-7 text-slate-700">“{testimonial.text}”</p>
                 <p className="mt-5 font-bold text-slate-950">{testimonial.name}</p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">{testimonial.label}</p>
                 <p className="mt-1 text-sm text-[var(--accent)]">{testimonial.service}</p>
               </article>
             ))}

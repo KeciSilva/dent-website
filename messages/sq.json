@@ -113,9 +113,9 @@
     "teamTitle": "Njihuni me ekipin",
     "testimonialsTitle": "Përshtypje pacientësh",
     "testimonials": [
-      { "name": "Arta", "service": "Implante dentare", "text": "Mora shpjegime të qarta për çdo hap dhe u ndjeva e dëgjuar gjatë konsultës." },
-      { "name": "Besnik", "service": "Kujdes urgjent", "text": "Ekipi më ndihmoi të kuptoja situatën dhe më dha një plan të qartë për vizitën e radhës." },
-      { "name": "Megi", "service": "Zbardhim i dhëmbëve", "text": "Vizita ishte e organizuar dhe këshillat për kujdesin pas trajtimit ishin shumë të dobishme." }
+      { "name": "Arta", "label": "Mendim demo", "service": "Implante dentare", "text": "Mora shpjegime të qarta për çdo hap dhe u ndjeva e dëgjuar gjatë konsultës." },
+      { "name": "Besnik", "label": "Mendim demo", "service": "Kujdes urgjent", "text": "Ekipi më ndihmoi të kuptoja situatën dhe më dha një plan të qartë për vizitën e radhës." },
+      { "name": "Megi", "label": "Mendim demo", "service": "Zbardhim i dhëmbëve", "text": "Vizita ishte e organizuar dhe këshillat për kujdesin pas trajtimit ishin shumë të dobishme." }
     ],
     "findTitle": "Si të na gjeni",
     "findText": "Na gjeni në qendër të Tiranës. Për orarin dhe koordinimin e vizitës, kontaktoni ekipin tonë.",
@@ -150,15 +150,19 @@
   },
   "serviceDetail": {
     "forTitle": "Për kë është",
-    "processTitle": "Procesi"
+    "processTitle": "Procesi",
+    "expectTitle": "Çfarë të prisni"
   },
   "services": {
     "generalDentistry": {
       "name": "Stomatologji e përgjithshme dhe kontrolle",
       "short": "Kontrolle rutinë, këshilla higjiene, mbushje dhe parandalim për shëndet oral afatgjatë.",
-      "primaryKeyword": "dentist Tiranë",
+      "primaryKeyword": "kontroll dentar Tiranë",
+      "seoTitle": "Kontroll dentar në Tiranë | Auro Dent",
+      "metaDescription": "Kontroll dentar në Tiranë me vlerësim të kujdesshëm, këshilla parandaluese dhe plan të qartë kujdesi. Rezervoni një vizitë në Auro Dent.",
       "intro": "Stomatologjia e përgjithshme është baza e një buzëqeshjeje të shëndetshme. Në Auro Dent, kontrollet fokusohen te parandalimi, diagnoza e hershme dhe prioritetet e qarta të trajtimit.",
       "for": "Ky shërbim është për të rritur dhe adoleshentë që kanë nevojë për kontroll, këshilla higjiene, mbushje estetike ose konsultë të parë.",
+      "expect": "Vizita nis me pyetjet tuaja dhe një vlerësim të kujdesshëm. Diagnoza dhe plani përfundimtar varen nga kontrolli në klinikë dhe nga nevojat tuaja.",
       "process": ["Rishikim i historikut dentar dhe shqetësimeve aktuale.", "Kontroll klinik dhe radiografi kur nevojiten.", "Shpjegim i gjetjeve me prioritete dhe alternativa.", "Planifikim i parandalimit, higjienës ose restaurimit."],
       "faqs": [
         { "q": "Sa shpesh duhet të bëj kontroll?", "a": "Shumë pacientë vijnë çdo gjashtë muaj, por intervali varet nga mishrat e dhëmbëve, rreziku për karies dhe trajtimet e mëparshme." },
@@ -170,8 +174,11 @@
       "name": "Zbardhim i dhëmbëve",
       "short": "Opsione profesionale zbardhimi pas kontrollit të smaltit, mishrave dhe ndjeshmërisë.",
       "primaryKeyword": "zbardhim i dhëmbëve Tiranë",
+      "seoTitle": "Zbardhim dhëmbësh në Tiranë | Auro Dent",
+      "metaDescription": "Zbardhim i dhëmbëve në Tiranë me vlerësim të smaltit, mishrave dhe ndjeshmërisë. Mësoni opsionet në një konsultë në Auro Dent.",
       "intro": "Zbardhimi i dhëmbëve mund të ndriçojë smaltin natyral kur planifikohet në mënyrë të sigurt. Kurorat, mbushjet dhe fasetat nuk zbardhen si dhëmbët natyralë.",
       "for": "Zbardhimi mund t’u përshtatet të rriturve me dhëmbë dhe mishra të shëndetshëm që duan një nuancë më të ndritshme para një eventi ose trajtimi estetik.",
+      "expect": "Para trajtimit kontrollohen dhëmbët dhe mishrat, si edhe restaurimet ekzistuese. Rezultati dhe ndjeshmëria ndryshojnë sipas gjendjes së smaltit dhe zakoneve të kujdesit.",
       "process": ["Kontroll i mishrave, smaltit dhe restaurimeve ekzistuese.", "Diskutim i pritshmërive dhe rrezikut për ndjeshmëri.", "Zgjedhja e metodës së zbardhimit.", "Udhëzime për kujdesin dhe mirëmbajtjen."],
       "faqs": [
         { "q": "A mund ta dëmtojë zbardhimi smaltin?", "a": "Zbardhimi profesional planifikohet pas kontrollit dentar dhe duhet përdorur sipas udhëzimit." },
@@ -183,8 +190,11 @@
       "name": "Implante dentare",
       "short": "Planifikim i implanteve për dhëmbë të munguar, me konsultë, diagnostikim dhe restaurim.",
       "primaryKeyword": "implante dentare Tiranë",
+      "seoTitle": "Implante dentare në Tiranë | Auro Dent",
+      "metaDescription": "Planifikim i implanteve dentare në Tiranë: konsultë, diagnostikim dhe restaurim me plan të qartë trajtimi. Rezervoni një konsultë në Auro Dent.",
       "intro": "Implantet dentare mund të zëvendësojnë dhëmbët e munguar kur shëndeti oral, kocka dhe gjendja e përgjithshme janë të përshtatshme.",
       "for": "Ky trajtim mund të merret në konsideratë për pacientë që u mungon një ose më shumë dhëmbë dhe kërkojnë zëvendësim fiks.",
+      "expect": "Procesi mund të përfshijë disa faza dhe kohë shërimi. Përshtatshmëria, kohëzgjatja dhe plani i restaurimit përcaktohen vetëm pas ekzaminimit dhe imazherisë së nevojshme.",
       "process": ["Konsultë dhe rishikim i historikut mjekësor.", "Imazheri digjitale dhe planifikim i implantit.", "Vendosje kirurgjikale kur është e përshtatshme.", "Periudhë shërimi dhe kurorë ose urë finale.", "Udhëzime mirëmbajtjeje dhe kontroll pasues."],
       "faqs": [
         { "q": "A janë implantet për të gjithë?", "a": "Jo. Përshtatshmëria varet nga kocka, mishrat, historiku shëndetësor dhe kontrolli klinik." },
@@ -195,9 +205,12 @@
     "orthodontics": {
       "name": "Ortodonci, aparate dhe aligner",
       "short": "Planifikim me aparate ose aligner për drejtim dhëmbësh, kafshim më të rehatshëm dhe ekuilibër estetik.",
-      "primaryKeyword": "Invisalign Tiranë",
+      "primaryKeyword": "aparate dhe aligner Tiranë",
+      "seoTitle": "Aparate dhe aligner në Tiranë | Auro Dent",
+      "metaDescription": "Aparate dhe aligner në Tiranë për planifikim të kujdesshëm të pozicionit të dhëmbëve dhe kafshimit. Diskutoni opsionet me Auro Dent.",
       "intro": "Trajtimi ortodontik mund të përmirësojë pozicionin e dhëmbëve dhe funksionin e kafshimit me aparate ose aligner transparentë kur janë klinikisht të përshtatshëm.",
       "for": "Mund t’u përshtatet adoleshentëve ose të rriturve me grumbullim, hapësira, rikthim të pozicionit ose shqetësime me kafshimin.",
+      "expect": "Plani ortodontik përshtatet pas skanimit dhe vlerësimit të kafshimit. Kontrollet periodike ndihmojnë në monitorimin e lëvizjes dhe në rregullimin e aparatit ose alignerëve.",
       "process": ["Konsultë ortodontike dhe të dhëna fillestare.", "Skanim digjital dhe diskutim i planit.", "Vendosje e aparatit ose dorëzim i alignerëve.", "Kontrolle progresi dhe rregullime.", "Plan mbajtës pas trajtimit."],
       "faqs": [
         { "q": "A janë alignerët për çdo rast?", "a": "Jo. Disa lëvizje kërkojnë aparate fikse ose kujdes specialistik." },
@@ -209,8 +222,11 @@
       "name": "Stomatologji për fëmijë",
       "short": "Vizita miqësore për fëmijë, parandalim, silantë dhe udhëzim për prindër.",
       "primaryKeyword": "dentist për fëmijë Tiranë",
+      "seoTitle": "Dentist për fëmijë në Tiranë | Auro Dent",
+      "metaDescription": "Dentist për fëmijë në Tiranë me vizita parandaluese, këshilla për prindërit dhe qasje të përshtatur për moshën. Rezervoni një kontroll.",
       "intro": "Stomatologjia për fëmijë fokusohet te parandalimi, besimi dhe zakonet e hershme që mbështesin shëndetin oral gjatë gjithë jetës.",
       "for": "Ky shërbim është për fëmijë dhe prindër që duan kontrolle, këshilla parandaluese ose ndihmë me shqetësime të hershme dentare.",
+      "expect": "Vizita përshtatet me moshën dhe rehatinë e fëmijës. Prindërit marrin këshilla praktike, ndërsa çdo trajtim i mëtejshëm rekomandohet vetëm kur nevojitet.",
       "process": ["Prezantim i butë dhe bisedë me prindin.", "Kontroll miqësor për fëmijën.", "Këshilla parandalimi dhe udhëzim për fluor.", "Plan trajtimi vetëm kur nevojitet."],
       "faqs": [
         { "q": "Kur duhet vizita e parë?", "a": "Vizitat e hershme ndihmojnë fëmijën të ndihet rehat dhe prindërit të marrin këshilla parandalimi." },
@@ -222,8 +238,11 @@
       "name": "Kujdes dentar urgjent",
       "short": "Vlerësim urgjent për dhimbje, ënjtje, dhëmbë të thyer dhe restaurime të humbura.",
       "primaryKeyword": "dentist urgjent Tiranë",
+      "seoTitle": "Dentist urgjent në Tiranë | Auro Dent",
+      "metaDescription": "Dentist urgjent në Tiranë për vlerësim të dhimbjes, ënjtjes, traumës ose restaurimeve të dëmtuara. Kontaktoni Auro Dent për udhëzim.",
       "intro": "Urgjencat dentare kërkojnë vlerësim të qetë dhe hapa të qartë. Dhimbja e fortë, ënjtja ose trauma duhet të kontrollohen shpejt.",
       "for": "Ky shërbim është për pacientë me dhimbje dhëmbi, ënjtje, dhëmbë të thyer, trauma dentare ose mbushje dhe kurora të humbura.",
+      "expect": "Vizita e parë synon të kuptojë shkakun dhe të stabilizojë situatën kur është e mundur. Në raste të caktuara mund të nevojitet trajtim i mëtejshëm pas diagnozës.",
       "process": ["Rishikohen simptomat urgjente.", "Dentisti kontrollon zonën dhe mund të kërkojë imazheri.", "Jepet lehtësim i menjëhershëm ose kujdes i përkohshëm kur është e përshtatshme.", "Shpjegohet plani pasues."],
       "faqs": [
         { "q": "Çfarë quhet urgjencë?", "a": "Dhimbja e fortë, ënjtja, trauma, gjakderdhja e pakontrolluar ose thyerja e dhëmbit të përparmë duhen vlerësuar shpejt." },
@@ -235,8 +254,11 @@
       "name": "Stomatologji estetike (faseta)",
       "short": "Dizajn buzëqeshjeje, faseta dhe planifikim estetik me qëllime natyrale.",
       "primaryKeyword": "faseta dentare Tiranë",
+      "seoTitle": "Faseta dentare në Tiranë | Auro Dent",
+      "metaDescription": "Faseta dentare në Tiranë me vlerësim të smaltit, mishrave dhe kafshimit para planifikimit estetik. Rezervoni një konsultë në Auro Dent.",
       "intro": "Stomatologjia estetike mund të përmirësojë formën, nuancën dhe harmoninë e buzëqeshjes. Fasetat planifikohen vetëm pas kontrollit të shëndetit oral dhe kafshimit.",
       "for": "Fasetat mund t’u përshtaten pacientëve me dhëmbë të shëndetshëm që duan të përmirësojnë formën, ngjyrën ose hapësirat e dukshme.",
+      "expect": "Planifikimi estetik nis me vlerësimin e shëndetit oral dhe pritshmërive tuaja. Forma, nuanca dhe mënyra e trajtimit vendosen rast pas rasti, pa premtime të njëjta për çdo pacient.",
       "process": ["Konsultë estetike dhe përcaktim objektivash.", "Kontroll i smaltit, mishrave dhe kafshimit.", "Parapamje ose mock-up kur është e përshtatshme.", "Përgatitje dhe ngjitje e fasetave.", "Udhëzime kujdesi dhe vizita mirëmbajtjeje."],
       "faqs": [
         { "q": "A janë fasetat të përhershme?", "a": "Shumë trajtime me faseta përfshijnë përgatitje të smaltit, ndaj duhen konsideruar si punime afatgjata." },
@@ -262,6 +284,7 @@
     "eyebrow": "Galeria",
     "title": "Galeri klinike dhe shembuj trajtimesh",
     "intro": "Një vështrim i shkurtër në ambientin tonë të qetë klinik dhe kujdesin që i kushtojmë çdo vizite.",
+    "environmentTitle": "Ambientet e klinikës",
     "items": [
       { "title": "Recepsioni", "alt": "Recepsion minimalist i klinikës dentare" },
       { "title": "Dhoma e trajtimit", "alt": "Dhomë e pastër trajtimi dentar me pajisje moderne" },
@@ -272,6 +295,7 @@
     "eyebrow": "Blog",
     "title": "Artikuj edukues dentarë",
     "intro": "Artikuj praktikë që ju ndihmojnë të merrni vendime të informuara për shëndetin oral dhe trajtimet dentare.",
+    "authorLabel": "Autor demo",
     "posts": {
       "visitDentist": {
         "title": "Sa shpesh duhet të shkoni te dentisti?",
@@ -299,6 +323,7 @@
     "eyebrow": "Pyetje",
     "title": "Pyetje të shpeshta",
     "intro": "Pyetje të zakonshme para rezervimit të një takimi dentar.",
+    "questionsTitle": "Pyetjet e pacientëve",
     "items": [
       { "q": "Si mund të rezervoj takim?", "a": "Përdorni formularin, telefononi klinikën ose dërgoni email me orarin e preferuar dhe shërbimin që ju intereson." },
       { "q": "A trajtoni urgjenca dentare?", "a": "Takimet urgjente koordinohen sipas disponueshmërisë dhe rëndësisë së simptomave." },
@@ -310,6 +335,8 @@
     "eyebrow": "Kontakti",
     "title": "Kontakt dhe rezervim takimi",
     "intro": "Dërgoni një kërkesë për konsultë ose kontaktoni drejtpërdrejt Auro Dent.",
+    "detailsTitle": "Të dhënat e klinikës",
+    "mapSectionTitle": "Ku ndodhemi",
     "form": {
       "name": "Emri i plotë",
       "phone": "Telefoni",
@@ -317,7 +344,7 @@
       "service": "Shërbimi që ju intereson",
       "message": "Mesazhi",
       "submit": "Kërko takim",
-      "note": "Ekipi ynë do t’i përdorë të dhënat vetëm për t’iu përgjigjur kërkesës suaj. Mos dërgoni dokumente mjekësore të ndjeshme në këtë formular."
+      "note": "Ky formular është vetëm për demonstrim; nuk ka backend real të lidhur. Mos dërgoni dokumente mjekësore të ndjeshme."
     },
     "mapTitle": "Hartë që tregon vendndodhjen e klinikës Auro Dent në Tiranë",
     "mapLink": "Hapni vendndodhjen në hartë"
@@ -335,7 +362,8 @@
     "title": "Faqja nuk u gjet",
     "text": "Faqja që kërkuat nuk ekziston.",
     "cta": "Kthehu në kryefaqe",
-    "servicesCta": "Shiko shërbimet"
+    "servicesCta": "Shiko shërbimet",
+    "contactCta": "Kontakto klinikën"
   },
   "loading": "Faqja po ngarkohet",
   "error": {

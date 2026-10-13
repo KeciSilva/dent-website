@@ -24,7 +24,8 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
           <p className="eyebrow">{messages.gallery.eyebrow}</p>
           <h1 className="mt-4 max-w-4xl font-heading text-5xl font-extrabold tracking-tight text-slate-950">{messages.gallery.title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{messages.gallery.intro}</p>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <h2 className="mt-12 font-heading text-2xl font-extrabold text-slate-950">{messages.gallery.environmentTitle}</h2>
+          <div className="mt-5 grid gap-6 md:grid-cols-3">
             {messages.gallery.items.map((item, index) => (
               <figure key={item.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                 <div className="relative aspect-[4/3]">
