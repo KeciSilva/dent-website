@@ -55,6 +55,7 @@ summary {
 
 .animate-fade-up {
   animation: fade-up 520ms ease-out both;
+  will-change: opacity, transform;
 }
 
 @layer components {

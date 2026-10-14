@@ -26,7 +26,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
     <>
       <section className="relative overflow-hidden bg-white">
         <div className="mx-auto grid min-h-[78svh] max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
-          <div>
+          <div className="animate-fade-up">
             <p className="eyebrow">{messages.home.heroEyebrow}</p>
             <h1 className="mt-5 max-w-4xl font-heading text-5xl font-extrabold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
               {messages.home.heroTitle}
