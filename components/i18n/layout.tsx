@@ -6,6 +6,7 @@ import { siteConfig, type Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
 const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
+const navPath = (locale: Locale, key: (typeof navKeys)[number]) => `/${locale}/${key === 'international' ? 'international-patients' : key}`
 
 export function SiteHeader({ locale, messages }: { locale: Locale; messages: Messages }) {
   return (
@@ -22,7 +23,7 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: Mes
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label={messages.nav.menu}>
           {navKeys.map((key) => (
-            <Link key={key} href={`/${locale}/${key}`} className="text-sm font-medium text-slate-700 hover:text-[var(--accent)]">
+            <Link key={key} href={navPath(locale, key)} className="text-sm font-medium text-slate-700 hover:text-[var(--accent)]">
               {messages.nav[key]}
             </Link>
           ))}
@@ -60,7 +61,7 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: Mes
           <h2 className="footer-heading">{messages.nav.menu}</h2>
           <div className="mt-4 grid gap-2">
             {navKeys.map((key) => (
-              <Link key={key} href={`/${locale}/${key}`} className="footer-link">{messages.nav[key]}</Link>
+              <Link key={key} href={navPath(locale, key)} className="footer-link">{messages.nav[key]}</Link>
             ))}
             <Link href={`/${locale}/privacy`} className="footer-link">{messages.nav.privacy}</Link>
           </div>

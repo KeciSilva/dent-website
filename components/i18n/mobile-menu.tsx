@@ -7,6 +7,7 @@ import type { Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
 const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
+const navPath = (locale: Locale, key: (typeof navKeys)[number]) => `/${locale}/${key === 'international' ? 'international-patients' : key}`
 
 export function MobileMenu({ locale, messages }: { locale: Locale; messages: Messages }) {
   const [open, setOpen] = useState(false)
@@ -33,7 +34,7 @@ export function MobileMenu({ locale, messages }: { locale: Locale; messages: Mes
           {navKeys.map((key) => (
             <Link
               key={key}
-              href={`/${locale}/${key}`}
+              href={navPath(locale, key)}
               onClick={() => setOpen(false)}
               className="rounded-xl px-4 py-3 font-medium text-slate-700 hover:bg-slate-50"
             >
