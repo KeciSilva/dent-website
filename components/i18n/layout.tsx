@@ -14,7 +14,7 @@ const navPath = (locale: Locale, key: NavKey) => key === 'home' ? `/${locale}` :
 export function SiteHeader({ locale, messages }: { locale: Locale; messages: Messages }) {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-      <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex min-h-[72px] max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="flex items-center gap-3" aria-label={siteConfig.name}>
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-[var(--accent)] font-heading text-lg font-extrabold text-white">
             AD
