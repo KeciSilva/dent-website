@@ -6,7 +6,10 @@ import { siteConfig, type Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
 const navKeys = ['home', 'about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
-const navPath = (locale: Locale, key: (typeof navKeys)[number]) => key === 'home' ? `/${locale}` : `/${locale}/${key === 'international' ? 'international-patients' : key}`
+const primaryNavKeys = ['home', 'about', 'services', 'team', 'blog', 'contact'] as const
+const moreNavKeys = ['gallery', 'international', 'faq'] as const
+type NavKey = (typeof navKeys)[number]
+const navPath = (locale: Locale, key: NavKey) => key === 'home' ? `/${locale}` : `/${locale}/${key === 'international' ? 'international-patients' : key}`
 
 export function SiteHeader({ locale, messages }: { locale: Locale; messages: Messages }) {
   return (
@@ -22,11 +25,21 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: Mes
           </span>
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label={messages.nav.menu}>
-          {navKeys.map((key) => (
+          {primaryNavKeys.map((key) => (
             <Link key={key} href={navPath(locale, key)} className="text-sm font-medium text-slate-700 hover:text-[var(--accent)]">
               {messages.nav[key]}
             </Link>
           ))}
+          <details className="group relative">
+            <summary className="cursor-pointer list-none text-sm font-medium text-slate-700 hover:text-[var(--accent)]">{messages.nav.more}</summary>
+            <div className="absolute right-0 top-8 z-10 min-w-56 rounded-xl border border-slate-200 bg-white p-2 shadow-xl">
+              {moreNavKeys.map((key) => (
+                <Link key={key} href={navPath(locale, key)} className="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-[var(--accent)]">
+                  {messages.nav[key]}
+                </Link>
+              ))}
+            </div>
+          </details>
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher currentLocale={locale} label={messages.nav.language} />
