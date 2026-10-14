@@ -15,10 +15,10 @@
 /* ==================================================================== */
 
 export const siteConfig = {
-  // TODO(launch): real production domain (no trailing slash).
-  siteUrl: 'https://www.valoisoralwellness.com',
+  // Legacy source retained for reference; the active site reads lib/site-config.ts.
+  siteUrl: 'https://auro-dent.netlify.app',
 
-  brand: 'AURO DENT',
+  brand: 'Auro Dent',
   shortName: 'AURO',
   tagline: 'Healthy Smiles, Made Simple',
 
@@ -32,30 +32,29 @@ export const siteConfig = {
 
   // TODO(launch): export a real 1200×630 social cover image to this path.
   ogImage: '/og/og-cover-1200x630.jpg',
-  ogImageAlt: 'AURO DENT — Healthy Smiles, Made Simple',
+  ogImageAlt: 'Modern Auro Dent dental clinic in Tirana',
 
   logo: '/favicons/icon-512.png',
   priceRange: '$$$$',
 
   // TODO(launch): real handle, or remove twitter:site from index.html.
-  twitterHandle: '@valoiswellness',
+  twitterHandle: '',
 
   // Primary headquarters. Cities below are served from here / by branches.
   // TODO(launch): replace ALL of the following with real clinic data.
   business: {
-    name: 'AURO DENT',
-    telephone: '+41 22 000 00 00', // TODO
-    email: 'hello@valoisoralwellness.com', // TODO
-    streetAddress: 'Rruga e Demos 12', // TODO
-    addressLocality: 'Tirana', // TODO
-    postalCode: '1204', // TODO
-    addressRegion: 'Tirana', // TODO
-    addressCountry: 'CH', // TODO
-    geo: { lat: 46.2044, lng: 6.1432 }, // TODO
+    name: 'Auro Dent',
+    telephone: '+355 69 000 0000',
+    email: 'info@aurodent.example',
+    streetAddress: 'Rruga Sami Frashëri 12',
+    addressLocality: 'Tirana',
+    postalCode: '1001',
+    addressRegion: 'Tirana',
+    addressCountry: 'AL',
     // schema.org openingHoursSpecification shorthand → expanded in buildJsonLd
     openingHours: [
-      { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '18:00' },
-      { days: ['Saturday'], opens: '10:00', closes: '14:00' },
+      { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '19:00' },
+      { days: ['Saturday'], opens: '09:00', closes: '14:00' },
     ],
   },
 
@@ -63,14 +62,10 @@ export const siteConfig = {
   areaServed: ['Tirana', 'Albania'],
 
   // TODO(launch): real social profile URLs (or trim the list).
-  sameAs: [
-    'https://www.instagram.com/valoisoralwellness',
-    'https://www.linkedin.com/company/valoisoralwellness',
-    'https://www.facebook.com/valoisoralwellness',
-  ],
+  sameAs: [],
 
   // Booking destination for the CTA buttons. TODO(launch): real URL/mailto.
-  bookingUrl: 'mailto:hello@valoisoralwellness.com',
+  bookingUrl: 'mailto:info@aurodent.example',
 
   // Web3Forms access key — booking form submissions are emailed to the address
   // registered for this key. Get a free key at https://web3forms.com (enter the

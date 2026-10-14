@@ -1513,9 +1513,9 @@ function Footer() {
 
         <div className="mt-16 grid gap-4 text-left md:grid-cols-3">
           {[
-            ['Call', '+41 22 000 00 00', 'For urgent dental pain, call before booking online.'],
-            ['Visit', 'Rruga e Demos 12, Tirana', 'A short walk from public transit and city parking.'],
-            ['Hours', 'Mon-Fri 09:00-18:00', 'Saturday appointments from 10:00-14:00.'],
+            ['Call', '+355 69 000 0000', 'For urgent dental pain, call before booking online.'],
+            ['Visit', 'Rruga Sami Frashëri 12, Tirana', 'A central Tirana demo location for this course project.'],
+            ['Hours', 'Mon-Fri 09:00-19:00', 'Saturday appointments from 09:00-14:00.'],
           ].map(([title, value, note]) => (
             <div key={title} className="rounded-2xl border border-espresso/10 bg-white/50 p-6 backdrop-blur">
               <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-champagne">
