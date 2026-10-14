@@ -65,7 +65,7 @@ export default async function LocaleLayout({
       </a>
       <SiteHeader locale={locale as Locale} messages={messages} />
       <JsonLd data={{ type: 'base', locale: locale as Locale, messages }} />
-      <main id="main">{children}</main>
+      <main id="main" className="min-h-screen">{children}</main>
       <SiteFooter locale={locale as Locale} messages={messages} />
     </>
   )
