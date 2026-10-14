@@ -21,7 +21,6 @@
 - dental veneers Tirana
 - teeth whitening Tirana
 - dental crowns Tirana
-- Invisalign Tirana
+- braces and aligners Tirana / aparate dhe aligner transparente Tiranë
 
 Use these naturally in page titles, headings and body copy. Avoid keyword stuffing.
-
