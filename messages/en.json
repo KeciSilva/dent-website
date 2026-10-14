@@ -8,6 +8,7 @@
     "team": "Team",
     "gallery": "Gallery",
     "blog": "Blog",
+    "international": "International patients",
     "faq": "FAQ",
     "contact": "Contact",
     "privacy": "Privacy",
@@ -82,6 +83,10 @@
       "title": "Privacy Policy",
       "description": "Read the Auro Dent privacy policy and how appointment enquiries are handled."
     },
+    "international": {
+      "title": "Dental treatment in Tirana",
+      "description": "Plan a dental consultation in Tirana with clear information about initial contact, treatment planning and follow-up after a visit."
+    },
     "notFound": {
       "title": "Page not found",
       "description": "The requested Auro Dent page could not be found."
@@ -146,7 +151,8 @@
   "servicesPage": {
     "eyebrow": "Services",
     "title": "Dental services in Tirana",
-    "intro": "Choose a treatment to learn about the process, candidacy, common questions and related services."
+    "intro": "Choose a treatment to learn about the process, candidacy, common questions and related services.",
+    "listTitle": "Main treatments"
   },
   "serviceDetail": {
     "forTitle": "Who it is for",
@@ -158,7 +164,7 @@
       "name": "General dentistry & check-ups",
       "short": "Routine exams, hygiene guidance, fillings and prevention for long-term oral health.",
       "primaryKeyword": "dental check-up Tirana",
-      "seoTitle": "Dental check-up in Tirana | Auro Dent",
+      "seoTitle": "Dental check-up in Tirana",
       "metaDescription": "Dental check-up in Tirana with careful assessment, prevention advice and a clear care plan. Book a visit with Auro Dent.",
       "intro": "General dentistry is the foundation of a healthy smile. At Auro Dent, check-ups focus on prevention, early diagnosis and clear treatment priorities.",
       "for": "This service is for adults and teens who need routine exams, hygiene advice, tooth-coloured fillings or a first consultation.",
@@ -174,7 +180,7 @@
       "name": "Teeth whitening",
       "short": "Professional whitening options planned after checking enamel, gums and sensitivity risk.",
       "primaryKeyword": "teeth whitening Tirana",
-      "seoTitle": "Teeth whitening in Tirana | Auro Dent",
+      "seoTitle": "Teeth whitening in Tirana",
       "metaDescription": "Teeth whitening in Tirana with an assessment of enamel, gums and sensitivity. Discuss suitable options in a consultation at Auro Dent.",
       "intro": "Teeth whitening can brighten natural enamel when it is planned safely. Existing crowns, fillings and veneers do not whiten like natural teeth.",
       "for": "Whitening may suit adults with healthy teeth and gums who want a brighter shade before an event or cosmetic treatment.",
@@ -190,7 +196,7 @@
       "name": "Dental implants",
       "short": "Implant treatment planning for missing teeth, including consultation, diagnostics and restoration.",
       "primaryKeyword": "dental implants Tirana",
-      "seoTitle": "Dental implants in Tirana | Auro Dent",
+      "seoTitle": "Dental implants in Tirana",
       "metaDescription": "Dental implant planning in Tirana: consultation, diagnostics and restoration with a clear treatment plan. Book a consultation at Auro Dent.",
       "intro": "Dental implants can replace missing teeth when oral health, bone support and general health are suitable.",
       "for": "This treatment may be considered for patients missing one or more teeth who want a fixed replacement option.",
@@ -206,7 +212,7 @@
       "name": "Orthodontics, braces & aligners",
       "short": "Braces and clear aligner planning for tooth alignment, bite comfort and smile balance.",
       "primaryKeyword": "braces and aligners Tirana",
-      "seoTitle": "Braces and aligners in Tirana | Auro Dent",
+      "seoTitle": "Braces and aligners in Tirana",
       "metaDescription": "Braces and aligners in Tirana with careful planning for tooth position and bite. Discuss suitable options with the Auro Dent team.",
       "intro": "Orthodontic treatment can improve tooth position and bite function using braces or clear aligners when clinically suitable.",
       "for": "It may suit teens or adults with crowding, spacing, relapse or bite concerns.",
@@ -222,7 +228,7 @@
       "name": "Pediatric dentistry",
       "short": "Friendly dental visits for children, prevention, sealants and parent guidance.",
       "primaryKeyword": "pediatric dentist Tirana",
-      "seoTitle": "Pediatric dentist in Tirana | Auro Dent",
+      "seoTitle": "Pediatric dentist in Tirana",
       "metaDescription": "Pediatric dentist in Tirana offering preventive visits, parent guidance and age-appropriate care. Book a gentle check-up at Auro Dent.",
       "intro": "Children’s dentistry focuses on prevention, confidence and early habits that support lifelong oral health.",
       "for": "This service is for children and parents who want check-ups, prevention advice or help with early dental concerns.",
@@ -238,7 +244,7 @@
       "name": "Emergency dental care",
       "short": "Urgent dental assessment for pain, swelling, broken teeth and lost restorations.",
       "primaryKeyword": "emergency dentist Tirana",
-      "seoTitle": "Emergency dentist in Tirana | Auro Dent",
+      "seoTitle": "Emergency dentist in Tirana",
       "metaDescription": "Emergency dentist in Tirana for pain, swelling, trauma or damaged restorations. Contact Auro Dent for guidance and an assessment.",
       "intro": "Dental emergencies need calm triage and clear next steps. Severe pain, swelling or trauma should be assessed quickly.",
       "for": "This service is for patients with toothache, swelling, broken teeth, dental trauma or lost fillings and crowns.",
@@ -254,7 +260,7 @@
       "name": "Cosmetic dentistry (veneers)",
       "short": "Smile design, veneers and aesthetic planning with cautious, natural-looking goals.",
       "primaryKeyword": "dental veneers Tirana",
-      "seoTitle": "Dental veneers in Tirana | Auro Dent",
+      "seoTitle": "Dental veneers in Tirana",
       "metaDescription": "Dental veneers in Tirana with enamel, gum and bite assessment before aesthetic planning. Book a consultation with Auro Dent.",
       "intro": "Cosmetic dentistry can improve tooth shape, shade and smile harmony. Veneers are planned only after checking oral health and bite.",
       "for": "Veneers may suit patients with healthy teeth who want to improve visible shape, shade or spacing concerns.",
@@ -348,6 +354,31 @@
     },
     "mapTitle": "Map showing the Auro Dent clinic location in Tirana",
     "mapLink": "Open location in maps"
+  },
+  "international": {
+    "eyebrow": "International patients",
+    "title": "Plan dental care in Tirana",
+    "intro": "Auro Dent offers a clear starting point for patients who want to understand treatment options before travelling.",
+    "treatmentsTitle": "Treatments to discuss",
+    "treatmentsText": "In your initial enquiry, you can tell us whether you are considering implants, veneers, whitening, orthodontics or general care.",
+    "processTitle": "How the initial contact works",
+    "process": [
+      "Send your question by email, phone or the contact form.",
+      "Share only the basic information needed to coordinate a consultation.",
+      "Discuss an in-clinic appointment and any information that may be useful.",
+      "Receive an explanation of possible next steps after an in-person examination."
+    ],
+    "travelTitle": "Travelling to and staying in Tirana",
+    "travelText": "The team can help coordinate an appointment time. Travel, accommodation and treatment decisions remain the patient’s responsibility.",
+    "aftercareTitle": "Follow-up after treatment",
+    "aftercareText": "Follow-up arrangements are discussed before treatment. Final diagnosis, timing and the need for further visits require an in-clinic examination.",
+    "faqTitle": "Common questions",
+    "faqs": [
+      { "q": "Can I enquire from outside Albania?", "a": "Yes. You can send an initial enquiry, but final diagnosis and planning require an in-person examination." },
+      { "q": "Can treatment be planned before I travel?", "a": "A preliminary discussion is possible, but suitability is assessed only after an examination at the clinic." },
+      { "q": "Which languages are available?", "a": "The website and initial communication are available in Albanian and English." }
+    ],
+    "cta": "Contact us about an initial consultation"
   },
   "privacy": {
     "title": "Privacy Policy",

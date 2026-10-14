@@ -5,7 +5,7 @@ import { MobileMenu } from '@/components/i18n/mobile-menu'
 import { siteConfig, type Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
-const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'faq', 'contact'] as const
+const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
 
 export function SiteHeader({ locale, messages }: { locale: Locale; messages: Messages }) {
   return (
@@ -71,7 +71,7 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: Mes
             <p className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> {siteConfig.address}</p>
             <p className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> <a href={`tel:${siteConfig.phone.replaceAll(' ', '')}`}>{siteConfig.phone}</a></p>
             <p className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p>
-            <p className="flex gap-2"><CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /> {messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}, {messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</p>
+            <p className="flex gap-2"><CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" /><span><span className="block">{messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}</span><span className="block">{messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</span></span></p>
           </div>
         </div>
       </div>

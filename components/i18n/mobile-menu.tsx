@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react'
 import type { Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
-const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'faq', 'contact'] as const
+const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
 
 export function MobileMenu({ locale, messages }: { locale: Locale; messages: Messages }) {
   const [open, setOpen] = useState(false)

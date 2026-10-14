@@ -31,7 +31,7 @@ function buildPayload(data: JsonLdProps['data']) {
           name: siteConfig.name,
           url: siteConfig.url,
           logo: `${siteConfig.url}${siteConfig.logo}`,
-          sameAs: Object.values(siteConfig.social),
+          ...(Object.values(siteConfig.social).length ? { sameAs: Object.values(siteConfig.social) } : {}),
         },
         {
           '@type': 'WebSite',
@@ -121,8 +121,9 @@ function buildPayload(data: JsonLdProps['data']) {
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: data.locale,
-    author: { '@type': 'Organization', name: siteConfig.name },
+    author: { '@type': 'Person', name: siteConfig.team[0].name },
     publisher: { '@id': `${siteConfig.url}/#organization` },
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
     mainEntityOfPage: `${siteConfig.url}/${data.locale}/blog/${post.slug}`,
   }
 }
@@ -136,7 +137,7 @@ export function hreflang(path: string) {
 }
 
 export function allIndexablePaths() {
-  const base = ['', '/about', '/services', '/team', '/gallery', '/blog', '/faq', '/contact', '/privacy']
+  const base = ['', '/about', '/services', '/team', '/gallery', '/blog', '/international-patients', '/faq', '/contact', '/privacy']
   return [
     ...base,
     ...services.map((service) => `/services/${service.slug}`),

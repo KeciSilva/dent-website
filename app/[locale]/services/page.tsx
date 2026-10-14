@@ -26,7 +26,8 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         <p className="eyebrow">{messages.servicesPage.eyebrow}</p>
         <h1 className="mt-4 max-w-4xl font-heading text-5xl font-extrabold tracking-tight text-slate-950">{messages.servicesPage.title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{messages.servicesPage.intro}</p>
-        <div className="mt-12">
+        <h2 className="mt-12 font-heading text-2xl font-extrabold text-slate-950">{messages.servicesPage.listTitle}</h2>
+        <div className="mt-5">
           <ServiceGrid locale={locale} messages={messages} />
         </div>
       </div>

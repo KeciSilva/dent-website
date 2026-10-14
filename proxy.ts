@@ -22,7 +22,12 @@ export function proxy(request: NextRequest) {
   }
 
   if (!isLocale(first)) {
-    return NextResponse.redirect(new URL(`/${defaultLocale}${pathname}`, request.url))
+    const legacyPath =
+      ['/about', '/services', '/team', '/dentist', '/gallery', '/before-after', '/blog', '/faq', '/contact', '/privacy', '/international-patients'].includes(pathname) ||
+      pathname.startsWith('/services/') || pathname.startsWith('/blog/')
+
+    if (legacyPath) return NextResponse.redirect(new URL(`/${defaultLocale}${pathname}`, request.url))
+    return NextResponse.next()
   }
 
   const response = NextResponse.next()

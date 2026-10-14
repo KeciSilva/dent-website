@@ -27,7 +27,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             <p className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4"><MapPin className="h-5 w-5 text-[var(--accent)]" /> {siteConfig.address}</p>
             <p className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4"><Phone className="h-5 w-5 text-[var(--accent)]" /> <a href={`tel:${siteConfig.phone.replaceAll(' ', '')}`}>{siteConfig.phone}</a></p>
             <p className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4"><Mail className="h-5 w-5 text-[var(--accent)]" /> <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p>
-            <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700">{messages.common.hours}: {messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}; {messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</p>
+            <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700"><span className="block font-semibold">{messages.common.hours}</span><span className="mt-1 block">{messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}</span><span className="block">{messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</span></p>
           </div>
           <h2 className="mt-10 font-heading text-2xl font-extrabold text-slate-950">{messages.contact.mapSectionTitle}</h2>
           <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-white">

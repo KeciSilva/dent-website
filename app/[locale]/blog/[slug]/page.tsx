@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   if (!post) return {}
   const messages = await getMessages(locale)
   const copy = messages.blog.posts[post.key]
-  return localizedMetadata({ locale, path: `/blog/${post.slug}`, title: copy.title, description: copy.description })
+  return localizedMetadata({ locale, path: `/blog/${post.slug}`, title: copy.title, description: copy.description, type: 'article' })
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {

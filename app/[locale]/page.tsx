@@ -138,7 +138,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
             <p className="eyebrow">{messages.home.findTitle}</p>
             <h2 className="mt-3 font-heading text-3xl font-extrabold text-slate-950">{messages.home.findTitle}</h2>
             <p className="mt-3 max-w-2xl leading-7 text-slate-600">{messages.home.findText}</p>
-            <p className="mt-4 text-sm text-slate-700">{siteConfig.address} · {messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}</p>
+            <p className="mt-4 text-sm leading-6 text-slate-700"><span className="block">{siteConfig.address}</span><span className="block">{messages.common.hoursWeekdays} {siteConfig.hours[0].opens}–{siteConfig.hours[0].closes}</span><span className="block">{messages.common.hoursSaturday} {siteConfig.hours[1].opens}–{siteConfig.hours[1].closes}</span></p>
             <Link href={`/${locale}/privacy`} className="mt-4 inline-flex font-bold text-[var(--accent)]">{messages.home.privacyLink}</Link>
           </div>
           <a href={siteConfig.mapEmbed} target="_blank" rel="noreferrer" className="btn-secondary">{messages.contact.mapLink}</a>

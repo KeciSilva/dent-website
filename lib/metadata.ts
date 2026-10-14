@@ -7,11 +7,13 @@ export function localizedMetadata({
   path,
   title,
   description,
+  type = 'website',
 }: {
   locale: Locale
   path: string
   title: string
   description: string
+  type?: 'website' | 'article'
 }): Metadata {
   const cleanPath = path === '/' ? '' : path
   return {
@@ -28,7 +30,7 @@ export function localizedMetadata({
       siteName: siteConfig.name,
       locale: locale === 'sq' ? 'sq_AL' : 'en_US',
       alternateLocale: locale === 'sq' ? ['en_US'] : ['sq_AL'],
-      type: 'website',
+      type,
       images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: locale === 'sq' ? 'Ambient modern i klinikës dentare Auro Dent' : 'Modern Auro Dent dental clinic interior' }],
     },
     twitter: {
