@@ -44,6 +44,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
                 alt={messages.home.heroAlt}
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(min-width: 1024px) 48vw, 100vw"
                 className="object-cover"
               />
