@@ -6,8 +6,8 @@ import { Menu, X } from 'lucide-react'
 import type { Locale } from '@/lib/site-config'
 import type { Messages } from '@/lib/i18n'
 
-const navKeys = ['about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
-const navPath = (locale: Locale, key: (typeof navKeys)[number]) => `/${locale}/${key === 'international' ? 'international-patients' : key}`
+const navKeys = ['home', 'about', 'services', 'team', 'gallery', 'blog', 'international', 'faq', 'contact'] as const
+const navPath = (locale: Locale, key: (typeof navKeys)[number]) => key === 'home' ? `/${locale}` : `/${locale}/${key === 'international' ? 'international-patients' : key}`
 
 export function MobileMenu({ locale, messages }: { locale: Locale; messages: Messages }) {
   const [open, setOpen] = useState(false)
